@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+						http://www.springframework.org/schema/aop 
+						http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<!-- DAO object configuration -->
+	<bean id="subscriptionDao"
+		class="com.hp.es.cto.sp.persistence.dao.subscription.SubscriptionDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="subscriptionPropertyDao"
+		class="com.hp.es.cto.sp.persistence.dao.subscription.SubscriptionPropertyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="subscriptionLogDao"
+		class="com.hp.es.cto.sp.persistence.dao.subscription.SubscriptionLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="subscriptionServerDao"
+		class="com.hp.es.cto.sp.persistence.dao.subscription.SubscriptionServerDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="subscriptionServerProductDao"
+		class="com.hp.es.cto.sp.persistence.dao.subscription.SubscriptionServerProductDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="productVersionDao"
+		class="com.hp.es.cto.sp.persistence.dao.subscription.ProductVersionDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- Service bean configuration -->
+	<bean id="subscriptionService"
+		class="com.hp.es.cto.sp.service.subscription.SubscriptionServiceImpl">
+		<property name="genericDao" ref="subscriptionDao"></property>
+		<property name="subscriptionDao" ref="subscriptionDao"></property>
+	</bean>
+	<bean id="subscriptionServerService"
+		class="com.hp.es.cto.sp.service.subscription.SubscriptionServerServiceImpl">
+		<property name="genericDao" ref="subscriptionServerDao"></property>
+		<property name="subscriptionServerDao" ref="subscriptionServerDao"></property>
+	</bean>
+	<bean id="subscriptionLogService"
+		class="com.hp.es.cto.sp.service.subscription.SubscriptionLogServiceImpl">
+		<property name="genericDao" ref="subscriptionLogDao"></property>
+		<property name="subscriptionLogDao" ref="subscriptionLogDao"></property>
+	</bean>
+	<bean id="subscriptionPropertyService"
+		class="com.hp.es.cto.sp.service.subscription.SubscriptionPropertyServiceImpl">
+		<property name="genericDao" ref="subscriptionPropertyDao"></property>
+		<property name="subscriptionPropertyDao" ref="subscriptionPropertyDao"></property>
+	</bean>
+	<bean id="subscriptionServerProductService"
+		class="com.hp.es.cto.sp.service.subscription.SubscriptionServerProductServiceImpl">
+		<property name="genericDao" ref="subscriptionServerProductDao"></property>
+		<property name="subscriptionServerProductDao" ref="subscriptionServerProductDao"></property>
+	</bean>
+	<bean id="productVersionService"
+		class="com.hp.es.cto.sp.service.subscription.ProductVersionServiceImpl">
+		<property name="genericDao" ref="productVersionDao"></property>
+		<property name="productVersionDao" ref="productVersionDao"></property>
+	</bean>
+</beans>

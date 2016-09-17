@@ -1,0 +1,230 @@
+html, body, section:not(.wizard), #cs-dialog-instance-detail {
+	margin : 0px;
+	height : 100%;
+}
+
+.cs-form-item-hint {
+	font-size: 10px;
+}
+
+.cs-effect-button {
+	cursor: pointer;
+}
+
+.ui-button {
+	cursor: pointer;
+}
+
+.show {
+	display : block;
+}
+
+.hide {
+	display : none;
+}
+
+#variation-price-table input[type=text], #bindingPolicy-price-table input[type=text] {
+	width : 100px;
+}
+
+.link {
+	color : #00F;
+	text-decoration : underline;
+}
+
+tbody td:not(.no-break) {
+	word-wrap : break-word;
+	/*	word-break:break-all; */
+}
+
+.cs-item {
+	position : relative;
+	width : 100%;
+	height : 100%;
+	border : none;
+	margin : 10px 10px 10px 10px;
+}
+.cs-item .cs-item-caption {
+	font-weight : bolder;
+}
+.cs-item .cs-item-primKey {
+	background-color : #CCC;
+	padding : 5px 5px 5px 5px;
+}
+
+.sk-toolbar-tools-primary {
+	left : 30px;
+}
+
+/* manage style start */
+/*.cs .sk-pane-header {
+	background : url(../../images/sk-lt/toolbar-bg.png) 0 0 repeat-x;
+	border-bottom : 1px solid #AAA;
+}
+
+#cs-main-header {
+	background : url(../../images/sk-lt/toolbar-bg.png) 0 0 repeat-x;
+	border-bottom : 1px solid #AAA;
+	height : 24px;
+}*/
+
+/*#cs-management-main-east div.sk-toolbar{
+ left: 200px;
+ }*/
+
+#cs-management-navigator-west {
+	float : left;
+	padding : 0 0px;
+	width : 220px;
+	height : 100%;
+}
+
+.cs #cs-management-nav-pane {
+	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#EDEDED)), transparent;
+	background : -moz-linear-gradient(#F2F2F2, #EDEDED), transparent;
+	background : linear-gradient(#F2F2F2, #EDEDED), transparent;
+	border-right : 1px solid #AAA;
+}
+
+#cs-management-nav-pane .sk-list-view {
+	margin : 0 0 0 0px;
+	padding : 1px 10px 1px 10px;
+}
+
+#cs-management-nav-pane .sk-list-view li.first {
+	margin : 0 0 0 0px;
+	padding : 1px 0px 1px 5px;
+	border-top : 0px solid #fff;
+	border-bottom : 1px solid #D0D0D0;
+}
+
+#cs-management-nav-pane .sk-list-view li.last {
+	margin : 0 0 0 0px;
+	padding : 1px 0px 1px 5px;
+	border-top : 1px solid #fff;
+	border-bottom : 0px solid #D0D0D0;
+}
+
+#cs-management-nav-pane .sk-list-view li {
+	margin : 0 0 0 0px;
+	padding : 1px 0px 1px 5px;
+	border-top : 1px solid #fff;
+	border-bottom : 1px solid #D0D0D0;
+}
+
+#cs-management-nav-pane .sk-list-view .cs-submenu-content {
+	padding-left : 10px;
+	width : 185px;
+}
+
+#cs-management-nav-pane .sk-list-view .cs-submenu-content li a {
+	width : 160px;
+}
+
+#cs-management-nav-pane .sk-list-view li a, #cs-management-nav-pane .sk-list-view li span {
+	width : 170px;
+	font-size : 12px;
+	line-height : 25px;
+	padding : 1px 0px 1px 20px;
+	background-size : 14px 14px;
+	-moz-background-size : 14px 14px; /* Firefox 3.6 */
+	background-repeat : no-repeat;
+	background-position: left center;
+	/*background-image : url(../../images/sk-lt/icon-photo-album.png);*/
+}
+
+#cs-management-nav-pane li.cs-activecompute a, #cs-management-nav-pane li.cs-activecompute span {
+	background-size : 16px 16px;
+	-moz-background-size : 16px 16px; /* Firefox 3.6 */
+	background-image : url(../../../images/library/Icon034_48.png)!important;
+}
+
+#cs-management-nav-pane li.cs-dma a, #cs-management-nav-pane li.cs-dma span {
+	background-size : 16px 16px;
+	-moz-background-size : 16px 16px; /* Firefox 3.6 */
+	background-image : url(../../../images/library/Gear.png)!important;
+}
+
+#cs-management-nav-pane li.cs-ec2 a, #cs-management-nav-pane li.cs-ec2 span {
+	background-size : 16px 16px;
+	-moz-background-size : 16px 16px; /* Firefox 3.6 */
+	background-image : url(../../../images/categories/provider_type/amazon_ec2.png)!important;
+}
+
+#cs-management-nav-pane li.cs-hpcs a, #cs-management-nav-pane li.cs-hpcs span {
+	background-size : 16px 16px;
+	-moz-background-size : 16px 16px; /* Firefox 3.6 */
+	background-image : url(../../../images/categories/provider_type/openstack.png)!important;
+}
+
+#cs-management-nav-pane li.cs-hpsa a, #cs-management-nav-pane li.cs-hpsa span {
+	background-size : 16px 16px;
+	-moz-background-size : 16px 16px; /* Firefox 3.6 */
+	background-image : url(../../../images/categories/provider_type/hp_sa.png)!important;
+}
+
+#cs-management-nav-pane li.cs-vcenter a, #cs-management-nav-pane li.cs-vcenter span {
+	background-size : 16px 16px;
+	-moz-background-size : 16px 16px; /* Firefox 3.6 */
+	background-image : url(../../../images/categories/provider_type/vmware_vcenter.png)!important;
+}
+
+#cs-management-nav-pane li.cs-default a, #cs-management-nav-pane li.cs-default span {
+	background-size : 16px 16px;
+	-moz-background-size : 16px 16px; /* Firefox 3.6 */
+	background-image : url(../../../images/library/OscilloscopeDisplay.png);
+}
+
+#cs-management-nav-pane .sk-photo-album-list-view li.sk-current {
+	background : #678EC8;
+	filter : progid:DXImageTransform.Microsoft.gradient(startcolorstr=#678EC8,endcolorstr=#4172BA,gradientType=0);
+	-ms-filter : progid:DXImageTransform.Microsoft.gradient(startcolorstr=#678EC8,endcolorstr=#4172BA,gradientType=0);/*IE8*/
+	background : #678EC8 -webkit-gradient(linear, 0 0, 0 bottom, from(#678EC8), to(#4172BA));
+	background : #678EC8 -webkit-linear-gradient(#678EC8, #4172BA);
+	background : #678EC8 -moz-linear-gradient(#678EC8, #4172BA);
+	background : #678EC8 -ms-linear-gradient(#678EC8, #4172BA);
+	background : #678EC8 -o-linear-gradient(#678EC8, #4172BA);
+	background : #678EC8 linear-gradient(#678EC8, #4172BA);
+	background-repeat : no-repeat;
+}
+
+#cs-management-nav-pane .sk-current a {
+	background : transparent;
+}
+
+/* manage style end */
+
+/*configuration start*/
+#cs-configuration-navigator-west {
+	float : left;
+	padding : 0 0px;
+	width : 200px;
+}
+
+.cs #cs-configuration-nav-pane {
+	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#EDEDED)), transparent;
+	background : -moz-linear-gradient(#F2F2F2, #EDEDED), transparent;
+	background : linear-gradient(#F2F2F2, #EDEDED), transparent;
+	border-right : 1px solid #AAA;
+}
+
+/*metadata*/
+.metadata_item:hover {
+  border: solid 1px #cccccc;
+  background: #ededed;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#ededed)), transparent;
+  background: -moz-linear-gradient(#ffffff, #ededed), transparent;
+  background: linear-gradient(#ffffff, #ededed), transparent;
+  -webkit-box-shadow: inset 0 -1px 1px 0 rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: inset 0 -1px 1px 0 rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 -1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.itemcontent .actiontool {
+  visibility: hidden;
+}
+
+.itemcontent:hover .actiontool {
+  visibility: visible;
+  background: transparent;
+}

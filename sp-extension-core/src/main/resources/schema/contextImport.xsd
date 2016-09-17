@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.hp.com/es/cto/sp/context/jaxb" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.hp.com/es/cto/sp/context/jaxb">
+    <complexType name="context_node_import">
+    	<sequence>
+    		<element name="child_node_import" type="tns:context_node_import" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="display_name" type="string"></attribute>
+    	<attribute name="context_metadata" type="string"></attribute>
+    </complexType>
+
+    <complexType name="context_metadata_import">
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="level" type="int"></attribute>
+    </complexType>
+
+    <element name="context_import" type="tns:context_import"></element>
+
+    <complexType name="context_import">
+    	<sequence>
+    		<element name="context_metadata_import" type="tns:context_metadata_import" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="context_node_import" type="tns:context_node_import" ></element>
+    	</sequence>
+    </complexType>
+</schema>

@@ -1,0 +1,11 @@
+{
+  "subscription": {
+    "name": "sub1",
+    "status": "running",
+    "csa_org_id": "ff808081428eb41d0142fa6cfbb0591f",
+    "owner_id": "ff808081428eb41d0142fa6cfbb0591o",
+    "context_node_id": "ff808081428eb41d0142fa6cfbb0591c",
+    "project": "project1",
+    "uuid": "ff808081428eb41d0142fa6cfbb0591u"
+  }
+}

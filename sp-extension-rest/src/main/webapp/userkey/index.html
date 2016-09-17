@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Customized Portal Page</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico">
+		
+		<link rel="stylesheet" type="text/css" href="static/css/common.css">
+		<link rel="stylesheet" type="text/css" href="static/css/jquery-ui.css">
+	
+		<!-- cc style -->
+		<link href="static/css/cc/sk-main.css" rel="stylesheet"/>
+		<link href="static/css/cc/htmlstyle.css" rel="stylesheet"/>
+		<link href="static/css/cc/table.css" rel="stylesheet"/>
+		<link href="static/css/jqpagination.css" rel="stylesheet"/>
+		<link href="static/css/zTreeStyle/zTreeStyle.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="static/css/portal-theme.css">	
+		
+		<script type="text/javascript" src="static/js/common/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="static/js/common/jquery.simplemodal.js"></script>
+		<script type="text/javascript" src="static/js/common/jquery.i18n.properties-min-1.0.9.js"></script>
+		
+		<script type="text/javascript" src="static/js/common/encoder.js"></script>
+		<script type="text/javascript" src="static/js/common/jshashtable-2.1_src.js"></script>
+		<script type="text/javascript" src="static/js/common/jquery.numberformatter-1.2.3.js"></script>
+		<script type="text/javascript" src="static/js/common/jquery-ui.js"></script>
+		<script type="text/javascript" src="static/js/common/jquery.jqpagination.js"></script>
+		<script type="text/javascript" src="static/js/common/jquery.ztree.core-3.5.min.js"></script>
+	
+		<script type="text/javascript" src="static/js/common/underscore.js"></script>
+		<script type="text/javascript" src="static/js/common/jquery-form.js"></script>
+
+		<!-- 	custom js		 -->
+		<script type="text/javascript" src="static/js/controllers/profile.js"></script>
+		<script type="text/javascript" src="static/js/template/profileTemplate.js"></script>
+		<script type="text/javascript" src="static/js/template/dialogMessage.js"></script>
+		<script type="text/javascript" src="static/js/util/pageController.js"></script>
+		<script type="text/javascript" src="static/js/util/util.js"></script>
+		<script type="text/javascript" src="static/js/util/data.js"></script>
+
+		<!-- 	subscription js		 -->
+		<script type="text/javascript" src="static/js/controllers/subscription.js"></script>
+		<script type="text/javascript" src="static/js/template/subscription/filters.js"></script>
+		<script type="text/javascript" src="static/js/template/subscription/listServer.js"></script>
+		<script type="text/javascript" src="static/js/template/subscription/listSubscription.js"></script>
+		<script type="text/javascript" src="static/js/template/subscription/logs.js"></script>
+		
+		<!-- 	subscription js		 -->
+		<script type="text/javascript" src="static/js/controllers/resourcepool.js"></script>
+		<script type="text/javascript" src="static/js/template/resourcepool/listResourcePool.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<div class="headersection">
+				<div id="logosection"> 
+					<div class="logo">
+						<img src="static/images/hp.png" alt="HP logo" align="absmiddle" height="22" width="22">	
+						<div class="titlename">Welcome to SP consumer portal</div> 
+					</div>
+					<div class="profileholder"> 
+						<ul>
+							<li class="logout">
+								<a style="cursor: pointer" onclick="window.history.back()">
+									<span>Back To CSA Marketplace</span>							
+								</a>
+							</li>
+							<li class="profile"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="headertitlediver">&nbsp;</div>
+				<div id="menusection">
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="javascript:void(0)" id="profileLink" onclick="showProfilePage()">Profile</a>
+							</li>	
+							<li>
+								<a href="javascript:void(0)" id="subscriptionLink" onclick="showSubscriptionPage()">My Subscriptions</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="resourcePoolLink" onclick="showResourcePoolPage()">Resource Provider</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Header part ends here-->
+		<div class="headerdividergrey">&nbsp;</div>
+
+		<!--Content part starts here-->
+		<div id="maincontent" style="min-height: 557px;">
+			<!--Section part starts here-->
+			<div id="profileTab"></div>
+			<div id="subscriptionTab"></div>
+			<div id="resourcePoolTab"></div>
+		<!--Section part ends here-->	
+			<div id="sp-dialog"></div>
+			<div id="message-dialog"></div>
+		</div>
+	</body>
+</html>

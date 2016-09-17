@@ -1,0 +1,17 @@
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="csa-provider-id"
+
+ff808081428eb41d0142fa6cfbb0591f
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="availability-zone"
+
+az-3.region-a.geo-1
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="auth-type"
+
+key
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="username"
+
+root
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ--

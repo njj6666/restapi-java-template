@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                        http://www.springframework.org/schema/tx 
+                        http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+                        http://www.springframework.org/schema/aop 
+                        http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+    <!-- DAO object configuration -->
+    <bean id="organizationDao"
+        class="com.hp.es.cto.sp.persistence.dao.group.OrganizationDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="groupDao" class="com.hp.es.cto.sp.persistence.dao.group.GroupDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="groupMappingDao"
+        class="com.hp.es.cto.sp.persistence.dao.group.GroupMappingDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="projectDao" class="com.hp.es.cto.sp.persistence.dao.group.ProjectDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="projectLdapMappingDao" class="com.hp.es.cto.sp.persistence.dao.group.ProjectLdapMappingDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!-- Service bean configuration -->
+    <bean id="organizationService" class="com.hp.es.cto.sp.service.group.OrganizationServiceImpl">
+        <property name="genericDao" ref="organizationDao"></property>
+    </bean>
+    <bean id="groupService" class="com.hp.es.cto.sp.service.group.GroupServiceImpl">
+        <property name="genericDao" ref="groupDao"></property>
+    </bean>
+    <bean id="groupMappingService" class="com.hp.es.cto.sp.service.group.GroupMappingServiceImpl">
+        <property name="genericDao" ref="groupMappingDao"></property>
+    </bean>
+    <bean id="ldapQueryService" class="com.hp.es.cto.sp.service.ldap.LdapQueryServiceImpl">
+    </bean>
+    <bean id="projectService" class="com.hp.es.cto.sp.service.group.ProjectServiceImpl">
+        <property name="genericDao" ref="projectDao"></property>
+        <property name="projectDao" ref="projectDao"></property>
+    </bean>
+    <bean id="projectLdapMappingService" class="com.hp.es.cto.sp.service.group.ProjectLdapMappingServiceImpl">
+        <property name="genericDao" ref="projectLdapMappingDao"></property>
+        <property name="projectLdapMappingDao" ref="projectLdapMappingDao"></property>
+    </bean>
+</beans>

@@ -1,0 +1,37 @@
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="name"
+
+server-name1
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="csa-provider-id"
+
+ff808081428eb41d0142fa6cfbb0591f
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="size"
+
+small
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="provider"
+
+ecs
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="is-allocated"
+
+true
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="os-type"
+
+linux
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="ip-address"
+
+192.168.1.2
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="public-ip-address"
+
+16.157.55.122
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="private-ip-address"
+
+192.168.1.2
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ

@@ -1,0 +1,25 @@
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="subscription_id"
+
+ff808081428eb41d0142fa6cfbb0591f
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="size"
+
+medium
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="csa_provider_id"
+
+ff808081428eb41d0142fa6cfbb0591n
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="dns"
+
+hp.server.com
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="public_ip_address"
+
+16.157.55.122
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="private_ip_address"
+
+192.168.1.2
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ

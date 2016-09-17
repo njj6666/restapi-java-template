@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- All annotation entity class here -->
+        <mapping class="com.hp.es.cto.sp.persistence.entity.context.ContextMetaData" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.context.ContextNode" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.context.ContextNodeLdapMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.context.ContextNodeProviderMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.group.LogicalGroup" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.group.GroupMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.group.Organization" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.group.Project" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.group.ProjectLdapMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.ProviderKey" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.ProviderRegion" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.ProviderRegionAz" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.ProviderSize" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.ProviderType" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.ProviderServer" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.ProviderSharedResource" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.OrgProviderSizeMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.OrgProviderRegionMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.OrgProviderTypeMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.provider.DesignProviderSizeMapping" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.keymgmt.UserKey" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.subscription.Subscription" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.subscription.SubscriptionLog" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.subscription.SubscriptionProperty" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.subscription.SubscriptionServer" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.subscription.SubscriptionServerProduct" />
+        <mapping class="com.hp.es.cto.sp.persistence.entity.subscription.ProductVersion" />
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.hp.com/es/cto/sp/context/jaxb/subscription/log" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.hp.com/es/cto/sp/context/jaxb/subscription/log">
+    <complexType name="slog">
+    	<attribute name="subscriptionId" type="string"></attribute>
+    	<attribute name="log_level" type="string"></attribute>
+    	<attribute name="component" type="string"></attribute>
+    	<attribute name="event" type="string"></attribute>
+    	<attribute name="message" type="string"></attribute>
+    	<attribute name="log_time" type="string"></attribute>
+    	<attribute name="detail" type="string"></attribute>
+    	<attribute name="path" type="string"></attribute>
+    	<attribute name="tag" type="string"></attribute>
+    </complexType>
+
+    <element name="subscription_logs" type="tns:subscription_logs"></element>
+
+    <complexType name="subscription_logs">
+    	<sequence>
+    		<element name="subscription_log" type="tns:slog" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+</schema>

@@ -1,0 +1,34 @@
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="csa-provider-id"
+
+ff808081428eb41d0142fa6cfbb0591f
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="availability-zone"
+
+az-3.region-a.geo-1
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="auth-type"
+
+key
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="username"
+
+root
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="key-file"; filename="spcluster_dsa"
+Content-Type: application/octet-stream
+
+-----BEGIN DSA PRIVATE KEY-----
+MIIBuwIBAAKBgQDAEuKU667AbQXA8x/LeNHq2FvXO67DpK2jooOeuoqPtimq3dj8
+wKIgSobDc3SPWHtaG9cQommOEXBNyhI54ZwGz/xij8+TdN+BBim0F6sffc7cuGTR
+9iV7H39sSKRrNI/Rb1WMkOR5FvY3Qaky9HTo91rLUf/VsyciQtB6zL6lmQIVANSg
+ohThhbEsPdS+UFn8MbpMqAK3AoGAant2rVjluXxe6VbRCf934pFjyK2wLZnzqvAW
+6VDPe7ZdSdxlSPMjM1yQzpvqZznerD3QcUvouXEtFl8RhhiN4gB1RGZ+PifCOzVn
+L8mdqs4nMrDpxUD4jb22qIvF2eIhLQecxdrVhsV3kaJuXzgMV9dng05KOCfc02fE
+WqcvxnwCgYEAuxV0Wyofe7gDE1yJDoMlCI35qww+UiRvSTBD8qxy4pEqHmT5rgEh
+0WjZWjQU5lUwpYI8HoSXNL1hEzkpsfZsZSqH7QsJPqAE39E7WhVdP+e18Ri3REPl
+saBJyRxUHrisFmdJFahtTbcTokzCYIGT+BJkQVeM0CufWGP6geB4NXkCFAKmHqe9
+z7DEgx1VzP8rFpi7bU7k
+-----END DSA PRIVATE KEY-----
+
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ--

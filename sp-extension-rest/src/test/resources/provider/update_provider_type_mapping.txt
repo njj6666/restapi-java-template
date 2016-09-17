@@ -1,0 +1,6 @@
+{
+    "org_provider_type_col": {
+        "org_id": "test_org_id",
+        "provider_type": "small"
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscription_logs xmlns="http://www.hp.com/es/cto/sp/context/jaxb/subscription/log"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.hp.com/es/cto/sp/context/jaxb/subscription/log subscriptionLog.xml ">
+</subscription_logs>
+

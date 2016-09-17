@@ -1,0 +1,17 @@
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="name"
+
+server-name1
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="csa_provider_id"
+
+ff808081428eb41d0142fa6cfbb0591f
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="current_connection"
+
+20
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ
+Content-Disposition: form-data; name="max_connection"
+
+100
+------WebKitFormBoundaryxmsrVjZxadPVoUFZ

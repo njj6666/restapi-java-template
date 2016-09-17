@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+						http://www.springframework.org/schema/aop 
+						http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<!-- DAO object configuration -->
+	<bean id="providerKeyDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.ProviderKeyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="providerTypeDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.ProviderTypeDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="providerSizeDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.ProviderSizeDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="orgProviderSizeMappingDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.OrgProviderSizeMappingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="orgProviderRegionMappingDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.OrgProviderRegionMappingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="orgProviderTypeMappingDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.OrgProviderTypeMappingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="designProviderSizeMappingDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.DesignProviderSizeMappingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="providerRegionDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.ProviderRegionDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="providerRegionAzDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.ProviderRegionAzDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="providerServerDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.ProviderServerDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="providerSharedResourceDao"
+		class="com.hp.es.cto.sp.persistence.dao.provider.ProviderSharedResourceDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- Service bean configuration -->
+	<bean id="providerKeyService"
+		class="com.hp.es.cto.sp.service.provider.ProviderKeyServiceImpl">
+		<property name="genericDao" ref="providerKeyDao"></property>
+		<property name="providerKeyDao" ref="providerKeyDao"></property>
+	</bean>
+	<bean id="providerTypeService"
+		class="com.hp.es.cto.sp.service.provider.ProviderTypeServiceImpl">
+		<property name="genericDao" ref="providerTypeDao"></property>
+		<property name="providerTypeDao" ref="providerTypeDao"></property>
+	</bean>
+	<bean id="providerSizeService"
+		class="com.hp.es.cto.sp.service.provider.ProviderSizeServiceImpl">
+		<property name="genericDao" ref="providerSizeDao"></property>
+		<property name="providerSizeDao" ref="providerSizeDao"></property>
+	</bean>
+	<bean id="orgProviderSizeMappingService"
+		class="com.hp.es.cto.sp.service.provider.OrgProviderSizeMappingServiceImpl">
+		<property name="genericDao" ref="orgProviderSizeMappingDao"></property>
+		<property name="orgProviderSizeMappingDao" ref="orgProviderSizeMappingDao"></property>
+	</bean>
+	<bean id="orgProviderTypeMappingService"
+		class="com.hp.es.cto.sp.service.provider.OrgProviderTypeMappingServiceImpl">
+		<property name="genericDao" ref="orgProviderTypeMappingDao"></property>
+		<property name="orgProviderTypeMappingDao" ref="orgProviderTypeMappingDao"></property>
+	</bean>
+	<bean id="orgProviderRegionMappingService"
+		class="com.hp.es.cto.sp.service.provider.OrgProviderRegionMappingServiceImpl">
+		<property name="genericDao" ref="orgProviderRegionMappingDao"></property>
+		<property name="orgProviderRegionMappingDao" ref="orgProviderRegionMappingDao"></property>
+	</bean>
+	<bean id="designProviderSizeMappingService"
+		class="com.hp.es.cto.sp.service.provider.DesignProviderSizeMappingServiceImpl">
+		<property name="genericDao" ref="designProviderSizeMappingDao"></property>
+		<property name="designProviderSizeMappingDao" ref="designProviderSizeMappingDao"></property>
+	</bean>
+	<bean id="providerRegionService"
+		class="com.hp.es.cto.sp.service.provider.ProviderRegionServiceImpl">
+		<property name="genericDao" ref="providerRegionDao"></property>
+		<property name="providerRegionDao" ref="providerRegionDao"></property>
+	</bean>
+	<bean id="providerRegionAzService"
+		class="com.hp.es.cto.sp.service.provider.ProviderRegionAzServiceImpl">
+		<property name="genericDao" ref="providerRegionAzDao"></property>
+		<property name="providerRegionAzDao" ref="providerRegionAzDao"></property>
+	</bean>
+	<bean id="providerServerService"
+		class="com.hp.es.cto.sp.service.provider.ProviderServerServiceImpl">
+		<property name="genericDao" ref="providerServerDao"></property>
+		<property name="providerServerDao" ref="providerServerDao"></property>
+	</bean>
+	<bean id="providerSharedResourceService"
+		class="com.hp.es.cto.sp.service.provider.ProviderSharedResourceServiceImpl">
+		<property name="genericDao" ref="providerSharedResourceDao"></property>
+		<property name="providerSharedResourceDao" ref="providerSharedResourceDao"></property>
+	</bean>
+</beans>

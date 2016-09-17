@@ -1,0 +1,6 @@
+{
+    "org_provider_region_col": {
+        "org_id": "test_org_id",
+        "provider_type_id": "test_provider_id"
+    }
+}

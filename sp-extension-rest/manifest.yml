@@ -1,0 +1,6 @@
+---
+applications: 
+- name: sp-extension-rest
+  mem: 512M
+  path: target
+  buildpack: https://github.com/PellePedro/jboss-buildpack.git

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:security="http://www.springframework.org/schema/security"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+	<!-- Spring Security -->
+	<security:global-method-security
+		pre-post-annotations="enabled"></security:global-method-security>
+
+	<security:http pattern="/userkey/**" security="none"/>
+	<security:http pattern="/index.html" security="none"/>
+	<security:http pattern="/rest/api-docs/**" security="none"/>
+	<security:http pattern="/css/**" security="none"/>
+	<security:http pattern="/images/**" security="none"/>
+	<security:http pattern="/lib/**" security="none"/>
+	<security:http pattern="/swagger-ui.js" security="none"/>
+	<security:http pattern="/swagger-api-conf.js" security="none"/>
+
+	<security:http auto-config="false" entry-point-ref="basicEntryPoint">
+		<security:anonymous />
+		<security:logout invalidate-session="true" />
+		<security:intercept-url pattern="/rest/v1/user-keys/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/projects/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/context-metadatas/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/context-nodes/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/subscriptions/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/subscription-servers/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/subscription-properties/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/subscription-logs/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/subscription-server-products/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/rest/v1/provider-servers/**" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/**" access="ROLE_ADMIN" /> 
+		<security:custom-filter ref="authFilter" position="BASIC_AUTH_FILTER" />
+	</security:http>
+
+	<!-- Authentication Filter -->
+	<bean id="authFilter" class="com.hp.es.cto.sp.security.TokenAuthenticationFilter">
+		<property name="authenticationManager" ref="authenticationManager" />
+	</bean>
+
+	<!-- Authentication Entry Point -->
+	<bean id="basicEntryPoint"
+		class="org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint">
+		<property name="realmName" value="Name Of Your Realm" />
+	</bean>
+	
+
+	<!-- Authentication Provider -->
+	<bean id="authtokenProvider"
+		class="com.hp.es.cto.sp.security.TokenAuthenticationProvider">
+		<property name="adminCache" ref="AdminCache" />
+		<property name="userCache" ref="UserCache" />
+	</bean>
+	
+	<bean id="AdminCache"
+		class="com.hp.es.cto.sp.cache.SimpleTimeBasedCache">
+		<property name="timeLimit" value="300000" />
+		<property name="cacheSource" ref="AdminCacheSource" />
+	</bean>
+	
+	<bean id="AdminCacheSource" class="com.hp.es.cto.sp.security.authsource.AdminCacheSource" />
+	
+	<bean id="UserCache"
+		class="com.hp.es.cto.sp.cache.SimpleTimeBasedCache">
+		<property name="timeLimit" value="300000" />
+		<property name="cacheSource" ref="UserCacheSource" />
+	</bean>
+	
+	<bean id="UserCacheSource" class="com.hp.es.cto.sp.security.authsource.UserCacheSource" />
+
+	<!-- Authentication Manager -->
+	<security:authentication-manager alias="authenticationManager">
+		<security:authentication-provider ref="authtokenProvider" />
+	</security:authentication-manager>
+
+</beans>	

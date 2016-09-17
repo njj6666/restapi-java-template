@@ -1,0 +1,22 @@
+.DB_contentright {
+    float: left;
+    margin: 10px 0 0;
+    padding: 12px;
+    width: 20%;
+}
+.listcont {
+    float: left;
+    width: 67%;
+}
+.statuslisttab {
+    float: left;
+    margin: 0 -7px 10px 0;
+    min-width: 114px;
+    width: 22%;
+}
+.statuspricetab {
+    float: left;
+    margin: 0 10px 10px -8px;
+    min-width: 120px;
+    width: 28%;
+}

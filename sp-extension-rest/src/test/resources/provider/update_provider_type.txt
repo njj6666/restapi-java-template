@@ -1,0 +1,6 @@
+{
+    "provider_sub_type": {
+        "type": "testtype",
+        "sub_type": "test_subtype1"
+    }
+}

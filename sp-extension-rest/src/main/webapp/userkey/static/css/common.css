@@ -1,0 +1,893 @@
+/* CSS Document */
+/* general css */
+html{height: 100%;}
+textarea:focus, input:focus, button:focus, a:focus{outline: none;}
+a img{border: none;}
+a{outline: none;}
+*:focus {outline:none;}
+textarea{resize:none;}
+section, article, form {height: 100%;}
+.section{height: 100%;margin:0 230px 0 230px;background:#fff ;padding: 0 0 0 15px;}
+#loading-image{position: absolute;top:30%;left:40%; z-index: 99;}
+#loadingService{
+width: 100%;height: 100%;top: 0px;left: 0px;position: fixed;display: block;opacity: 0.4;
+background-color: #FFF;z-index: 100;text-align: center;filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";filter: alpha(opacity=40);
+}
+#mycustomscroll_details{
+/* Typical fixed height and fixed width example */
+float:left;	width:98%;sheight: 500px;sheight: 100%;z-index:0;padding-right:2px;
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;	padding-bottom: 70px;
+}
+/* Offering Detail Right Panel Box Styles */
+.rightcontentbox_tw_new{margin:7px 0 0 6px;color:#666666;font-size:12px;width:220px;}
+.rightcontentbox_tw_new_top{background:url(../images/rightcontent_box_top.png) no-repeat;padding:12px 5px 8px 12px;color:#4d4c4c;font-size:13px;font-weight:bold;}
+.rightcontentbox_tw_new_middle {background:url(../images/rightcontent_box_ctrn.png) repeat-y left top;padding:7px 5px 0 12px;line-height:1.4;}
+.rightcontentbox_tw_new_btm {background:url(../images/rightcontent_box_bottom.png) no-repeat;padding:15px 5px 20px 15px;color:#4d4c4c;font-size:13px;font-weight:bold;height: 14px;}
+.price{color: #444;font-size: 16px;font-weight: bold;}
+.payfreq{color: #b4b4b4;font-size: 12px;font-weight: normal;margin:0 0 5px 0;}
+.blueboxinnerdata{color: #444;font-size: 11px;font-weight: bold;margin:0 0 5px 0;width: 199px;}
+.rightcontentbox_tw_new_middle3 {float:none !important;display:block;height:30px;}
+.rgtbluebox{margin:-30px 0 0 7px;}
+.rgtblueboxdoc{margin:10px 0 0 10px;color: #444444;font-size: 11px;}
+.rgtblueboxdoc .top{background: url(../images/rgtsectdoc_top.png) no-repeat;height: 45px;width: 198px;color: #444;font-size: 12px;font-weight: bold;padding:17px 10px 0 13px;}
+.rgtblueboxdoc .cntr{background: url(../images/rgtsectdoc_bg.png) repeat-y;width: 212px;padding:0 10px 0 13px;margin:-28px 0 -11px;}
+.rgtblueboxdoc .cntr div{margin:5px 0 5px 0;}
+.rgtblueboxdoc .cntr div a{font-size: 12px;padding:0 0 0 18px;}
+.rgtblueboxdoc .btm{background: url(../images/rgtsectdoc_btm.png) no-repeat;height: 12px;width: 212px;}
+.rightbox_twsubs{color: #666666;font-size: 11px;margin: 5px 0 0 0;padding-left: 17px;width: 205px;}
+
+/* modalpopup */
+.modalpopup .top{background: url(../images/modalpopup_top.png) no-repeat;height: 14px;width: 362px;}
+.modalpopup .cntr{background: url(../images/modalpopup_bg.png) repeat-y;width: 350px;padding:10px 10px 0 13px;margin:0 0 0 0;}
+.modalpopup .btm{background: url(../images/modalpopup_btm.png) no-repeat;height: 14px;width: 362px;}
+.cntr-DB{
+background: url("../images/modalpopup_bg.png") repeat-y scroll 0 0 transparent;
+margin: 0;padding: 10px 10px 37px 5px;width: 362px;
+}
+.modalimg-req{height: 56px;padding:10px 0 0 10px;}
+.modaltxt-req{font-size: 14px;color: #adadad;margin: -53px 12px 0 47px;}
+.modaltxt-req span{font-size: 13px;color: #444;font-weight:bold;}
+.modaltxt{font-size: 13px;color: #adadad;margin: -40px 5px 0 60px;}
+.modaltxt span{font-size: 14px;color: #444;}
+.modaltxt2{font-size: 13px;color: #adadad;padding:10px 0;border-bottom: solid 1px #ccc;margin:0 25px 0 10px;}
+.modaltxt2 span{font-size: 12px;color: #000;}
+.modaltxt-3 {border-bottom: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;color: #ADADAD;font-size: 13px;margin: 0 20px 0 8px;padding: 10px 0;}
+.modaltxt3{font-size: 12px;color: #adadad;padding:10px 0;border-bottom: solid 1px #ccc;margin: 0 25px 0 10px;}
+.modaltxt3 span{font-size: 12px;color: #000;}
+.modaltxt-request-padding {/*padding-bottom:14px;*/}
+.modaltxt-request{float: left;}
+.modaltxt-request-right{color: #6E6E6E;/*float: right;*/font-weight: bold;text-align: right;}
+.modaltxt-req-box{color: #ADADAD;font-size: 11px;margin: -39px 12px 21px 60px;}
+.modaltxt-req-now{font-size: 14px;color: #adadad;margin: -48px 12px 0 60px;}
+.modalpopup .top1{background: url(../images/modalpopup_top1.png) no-repeat;height: 14px;width:620px;}
+.modalpopup .cntr1{background: url(../images/modalpopup_bg1.png) repeat-y;width: 584px;background:#fff;padding:0 10px 0 25px;margin:0;}
+.modalpopup .btm1{background: url(../images/modalpopup_btm1.png) no-repeat;height: 14px;width:620px;}
+.modalimg{height: 50px;padding: 10px 0 0 15px;}
+.modalimg1{height: 30px;padding:0px 0 0 10px;}
+.modaltxt_DB_line{font-size: 14px;color: #666666;font-weight:bold;margin: -50px 0 0 0px;border-bottom: 1px solid #CCCCCC;padding-bottom:10px;width:95%;}
+.modalsubtxt_DB1{font-size: 14px;color: #444444;padding:5px 20px 5px 0px;}
+.modalsubtxt_DB1 img{margin-right: 5px;}
+.modaltxt-DB {color: #ADADAD;font-size: 13px;margin: -38px 0 0 60px;width:280px;}
+#popupscroll{width:535px;height: 350px;sheight: 100%;overflow-y:auto;overflow-x:hidden;}
+div.box{margin:0 auto;z-index:0;}
+div.box h1{color:#666;font-size:18px;text-transform:uppercase;padding:5px 0 5px 5px;}
+div.box label{width:100%;display: block;background:#fff;padding:10px 0 10px 0;}
+div.box label span{display: block;color:#666666;font-size:13px;float:left;width:100px;padding:5px 20px 0 0;}
+div.box .input_text{padding:2px 2px;color:#666666;}
+div.box .button{margin:0 0 10px 0;padding:4px 7px;background:#CC0000;border:0px;text-align:center;position: relative;}
+.modalsubtxt_DB{font-size: 13px;color: #666666;padding:10px 20px 10px 10px;border-top: solid 0px #ccc;border-bottom: solid 0px #ccc;margin: 10px 30px 0 0; width:95%;}
+.modaltxt-Popup{border-bottom: 1px solid #CCCCCC;color: #ADADAD;font-size: 12px;margin: 0 30px 0 10px;padding:7px 19px 10px 52px;}
+.modaltxt-Popup span{font-size: 13px;color: #000;}
+.actionmodalimg{font-weight:bold;padding:0px 0 0 10px;}
+.exeActionName{font-weight:bold; padding: 0px 0 0 40px; margin:-23px 0 0 0px;font-size:13px;}
+.modalpopup .cntr-popup{background: url(../images/modalpopup_bg.png) repeat-y;width: 345px;padding:10px 10px 0 13px;margin:0 0 0 0;}
+.modbtns-btm-PopUp{clear: both;height: 23px;margin: 0 0 0 149px;padding-top: 10px;position: relative;}
+.modalsubtxt_title{font-size: 14px;font-weight:bold;color: #444444;padding:5px 20px 5px 5px;}
+.modbtns-btm-PopUp1{clear: both;height: 23px;margin: 0 0 0 269px;padding-top: 10px;position: relative;}
+.modalpopup .cntr3{background: url(../images/modalpopup_bg.png) repeat-y;width: 350px;padding:0px 10px 0 13px;margin:0;}
+.instanceRight{float:right;padding-bottom: 10px;width: 30%;}
+.selecttxt{font-size: 12px; color: #adadad; margin:-30px 5px 0 55px;}
+.modaltxtbold-new{ font-size: 13px; color: #404040; font-weight:normal; margin: -57px 0 0 50px;}
+.modbtns-modified{height: 24px;margin: 10px 0 0 256px;position: relative;}
+.search-result{color:#444; padding-left:10px; margin-top:5px;font-size:13px;font-weight:bold;}
+.hr_modal_solidline{width:95%;border-bottom: 1px solid #cccccc;height: 1px;margin:10px 0;height: 10px;}
+.closeimg{position: absolute;margin:7px 0 0 340px;height: 24px;}
+.closeimg1 img{margin-bottom: 0;margin-left: 594px;margin-right: 0;margin-top: 9px;position: absolute;}
+#simplemodal-overlay{background-color:#000;cursor:wait;z-index:300;}
+#simplemodal-container .simplemodal-data {padding:5px;}
+.rightpart{padding: 5px 0 70px 10px;height: 100%;}
+/*Subscription detail page style starts*/
+.sbscptin_detailsmiddle{float:left;margin: 0 auto;padding: 15px 10px 0px 10px;width:100%;}
+.info_left1{width:10%;float:left;margin-top:10px;border:none;clear:both;}
+.info_middle1{width:50%;float:left;color:#666;font-size:12px;font-weight:normal;position:relative;padding:10px 0px 0px 10px;}
+.info_middle1 h2{font-size:13px;font-weight:bold;color:#666666;margin:0px;padding:0px;}
+.info_right1{float:left;padding-left:5%;width:32%;color:#033;height:auto;}
+.lftrgtbuttons {width:95%; height:18px;}
+.left{float: left;}
+.right{float: right;}
+.cntr2{background: url(../images/modalpopup_bg1.png) repeat-y #fff;width: 585px;padding:0 10px 0 25px;margin:0;}
+.active{min-width:20%;height:35px;float:left;padding:0px;}
+.active img{float:left;padding-right: 8px;}
+.active div{float:left;}
+.process-width{float: right;text-align: right;width: 120px;}
+.substxt1{font-size: 12px;font-weight: bold;color: #444;}
+.marginpaddingzero{margin:0px;padding:0px;}
+.spacer5px{width:5px; height: 5px; clear: both;}
+.rightcontentbox_tw_new_middle2 {float:bottom !important;display:block;height:60px;}
+/* button position container*/
+.modbtns-cancel{position: relative;margin:10px 0 0 215px;height: 24px;}
+.modbtns{position: relative;margin:10px 0 0 280px;height: 24px;}
+.modbtns-btm{position: relative;margin:0 0 0 195px;padding-top:10px;clear:both;}
+.modbtns-Subs {float: right; height: 24px; margin: 6px 0 0; position: relative;}
+
+/*grey button*/
+.item a{text-decoration:none;text-align:left;padding-left:5px;float:left;}
+a.greybutton{
+background: transparent url('../images/button_grey_left.png') no-repeat top left;
+display: block;float: left;font-weight:bold;font-size:12px;line-height: 18px;height: 26px;padding-left: 10px;text-decoration: none;margin-bottom: 5px;}
+a:link.greybutton, a:visited.greybutton, a:active.greybutton{color: #fff; /*button text color*/}
+a.greybutton span{
+background: transparent url('../images/button_grey_right.png') no-repeat top right;
+display: block;padding: 4px 11px 4px 0;margin: 0 5px 0 0px;color:#fff;white-space: nowrap;
+}
+a.greybutton:hover{color:#fff;background: transparent url('../images/button_grey_left_hover.png') no-repeat top left; }
+a.greybutton:hover span{ color:#fff;background: transparent url('../images/button_grey_right_hover.png') no-repeat top right;}
+
+/*red button*/
+a.redbutton
+{
+background: transparent url('../images/button_red_left.png') no-repeat top left;
+display: block;float: left;font-weight:bold;font-size:12px;line-height: 18px;height: 26px;padding-left: 10px;text-decoration: none;padding-bottom: 4px;
+}
+a:link.redbutton, a:visited.redbutton, a:active.redbutton{color: #fff; /*button text color*/}
+a.redbutton span
+{
+background: transparent url('../images/button_red_right.png') no-repeat top right;
+display: block;padding: 3px 11px 5px 0; 
+}
+a.redbutton:hover{color:#fff;background: transparent url('../images/button_red_left_hover.png') no-repeat top left; }
+a.redbutton:hover span{ color:#fff;background: transparent url('../images/button_red_right_hover.png') no-repeat top right;}
+/*Disabled Grey Button */
+a.greybuttonrequest{
+background: url(../images/login_button_left.png) no-repeat top left;display: block;float: left;
+font-weight:bold;font-size:14px;line-height: 18px;height: 33px; /* Height of button background height */
+padding-left: 10px; /* Width of left menu image */
+text-decoration: none;
+}
+a:link.greybuttonrequest, a:visited.greybuttonrequest, a:active.greybuttonrequest{color: #acacac; /*button text color*/}
+.greybuttonrequest span{background: url(../images/login_button_right.png) no-repeat top right;display: block;padding: 8px 11px 4px 0;height: 33px;color:#cccccc;}
+a.greybuttonlist
+{
+background: transparent url('../images/button_disable_left.png') no-repeat top left;
+display: block;float: left;font-weight:bold;font-size:12px;line-height: 18px; 
+height: 26px; /* Height of button background height */
+padding-left: 10px; /* Width of left menu image */
+text-decoration: none;margin-bottom: 5px;
+}
+
+a:link.greybuttonlist, a:visited.greybuttonlist, a:active.greybuttonlist{color: #fff; /*button text color*/}
+a.greybuttonlist span
+{
+background: transparent url('../images/button_disable_right.png') no-repeat top right;
+display: block;padding: 4px 11px 4px 0;margin: 0 5px 0 0px;color:#fff;white-space: nowrap;
+}
+a.redbuttonSub
+{
+	background: url(../images/red_button_left.png) no-repeat top left;
+	display: block;
+	float: left;
+	font-weight:bold;
+	font-size:14px; 
+	line-height: 18px; 
+	height: 33px; /*Height of button background height*/
+	padding-left: 10px; /* Width of left menu image */
+	text-decoration: none;
+}
+
+a:link.redbuttonSub, a:visited.redbuttonSub, a:active.redbuttonSub{color: #fff; /*button text color*/}
+
+a.redbuttonSub span
+{
+	background: transparent url('../images/red_button_right.png') no-repeat top right;
+	display: block;
+	padding: 8px 11px 8px 0;
+	color:#ffffff; 
+}
+
+a.redbuttonSub:hover{color:#fff;background: transparent url('../images/red_button_left_hover.png') no-repeat top left; }
+
+a.redbuttonSub:hover span{ color:#fff;background: transparent url('../images/red_button_right_hover.png') no-repeat top right;}
+
+/*----------- Curved Border Inner Div -----------------------------------*/
+
+.t1 {background: url(../images/tm1.png) #fbfbfb repeat-x;  width:100%;}
+.b1{background:  url(../images/bm1.png)  0 100% repeat-x ;}
+.l1 {background: url(../images/lm1.png) 0 0 repeat-y;}
+.r1 {background: url(../images/rm1.png) 100% 0 repeat-y;}
+.bl1 {background: url(../images/bl1.png)  0 100% no-repeat;}
+.br1 {background: url(../images/br1.png) 100% 100% no-repeat;}
+.tl1 {background: url(../images/tl1.png)  0 0 no-repeat;}
+.tr1 {padding:24px 0 24px 0; }
+
+/*Green Button*/
+a.greenbutton{background: transparent url('../images/button_green_left.png') no-repeat top left;display: block;float: left;font-weight:bold;font-size:12px; line-height: 18px; height: 26px; /* Height of button background height */padding-left: 10px; /* Width of left menu image */text-decoration: none;margin-right:5px}
+a:link.greenbutton, a:visited.greenbutton, a:active.greenbutton{color: #494949; /*button text color*/}
+a.greenbutton span{background: transparent url('../images/button_green_right.png') no-repeat top right;display: block; color:#1d643f; height:32px;
+padding: 3px 11px 4px 0; }
+a.greenbutton:hover{color:#404040;background: transparent url('../images/button_green_left_hover.png') no-repeat top left; }
+a.greenbutton:hover span{ color:#1d643f;background: transparent url('../images/button_green_right_hover.png') no-repeat top right;}
+
+/*basic modal content*/
+#alertModalPopUp,#basic-modal-content,#basic-modal-content1,#basic-modal-content2,#basic-modal-content3,#basic-modal-content4,#basic-modal-content5,#basic-modal-content6,#basic-modal-content7,#basic-modal-content8,#basic-modal-content9,#basic-modal-content10,#sessionModalPopUp 
+{
+display:none;margin:20px;z-index:10;
+}
+
+/* Multiselect Drop Down CSS Class Files */
+.ui-dropdownchecklist-wrapper{position:relative;}
+.ui-dropdownchecklist
+{
+height: 20px;border: 1px solid #ddd;border-right: 0;
+background: #fff url(../images/dropdown.png) no-repeat center right;width:208px;
+}
+.ui-dropdownchecklist-hover, .ui-dropdownchecklist-active
+{
+background-image: url(../images/dropdown_hover.png);border-color: #5794bf;
+}
+	
+.ui-dropdownchecklist-text{height: 20px;line-height: 20px;margin-right: 17px; /* background dropdown.png image */
+color: #404040;font-size:12px;
+}
+.ui-dropdownchecklist-dropcontainer{background-color: #fff;border: 1px solid #999;}
+.ui-dropdownchecklist-dropcontainer-cus{border: 1px solid #5794bf;}
+.ui-dropdownchecklist-item {
+/* font-family:Arial, Helvetica, sans-serif; */
+font-size:12px;
+}
+.ui-dropdownchecklist-item-hover{background-color: #39f;}
+.ui-dropdownchecklist-item-disabled label{color: #ccc;}
+.ui-dropdownchecklist-item-hover .ui-dropdownchecklist-text{color: #fff;}
+
+.ui-dropdownchecklist-group {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.ui-dropdownchecklist-indent {
+	padding-left: 20px;
+}
+
+.dropdownStyle{
+	margin: 0 0 0 200px;
+}
+
+/* CSS For Placeholder */
+::-webkit-input-placeholder { color:#808080; }
+:-moz-placeholder { color:#808080; }
+:-ms-input-placeholder { color:#808080; }
+.placeholder { color:#808080; }
+
+/* CSS For Placeholder Completed */
+
+
+/*header area*/
+.containerthinwidethin{	width:100%;background:#fff;}
+.logo{float:left; border:0; padding:10px 20px 0 20px; width:60%;}
+.profileholder{float:right; margin: 10px 25px 0 0;}
+.profileholder ul li{display:inline;}
+.profileholder li {font-size:14px; font-weight:bold; color:#4d4d4d; padding: 0 0 0 25px;}
+.menu{float:left;width:70%;}
+.menu ul {margin:0; padding:13px 0 0 20px;}
+.menu ul li{display:inline; margin:0; padding:0;}
+.search{float:right;height: 32px;width: 187px;color:#999;margin:-16px 25px 0 0;}
+.search input[type=text]{
+background:url(../images/search_bg.png) no-repeat;padding:0px 50px 5px 5px;width:134px;
+height: 32px;line-height: 20px;vertical-align: middle;display:block;border:0;color: #b3b3b3;
+margin:2px 0 0 0;border:none;font-size:14px;font-family: HPSimplified;
+}
+.search input[type=text]:focus{
+ background:url(../images/search_bg_active.png) no-repeat; border:none; color:#4d4d4d;
+}
+.headerdividerblue{width:100%; height:1px; background-image:url(../images/header_divider_blue.gif); background-position:bottom; background-repeat:repeat-x;  background-color:#E6E6E6;}
+.headerdividergrey{width:100%; height:1px; background-image:url(../images/header_divider_grey.png); background-position:bottom; background-repeat:repeat-x;  background-color:#E6E6E6;}
+.section-big-lfnav{height: 100%;margin:0 0 0 220px;padding: 0 0 0 15px;}
+.SliderHead{font-size:13px;font-weight:bold;margin:7px ;color:#5d5d5d;}
+.container{width: 100%;height: 100%;margin: 0 auto;}
+#maincontent{width: 100%;height: 100%;overflow: hidden;}
+#maincontentRequest{width: 100%;height: 100%;overflow: hidden;padding-bottom: 10px;}
+
+/*dashboard layout styles*/
+aside{float: right;height: 100%;padding: 0 0 0 9px;position: relative;width: 220px;}
+.asidenobg{height:100%;width:245px;margin-right: -17px;}
+.asidesubslist{float: right;height: 100%;padding: 0 0 0 0px;width: 230px;}
+
+.section_big2{sheight: 100%;margin:0 250px 0 0;padding: 0 0 0 10px;z-index:200;background-color:#ff0000;}
+#mycustomscroll_fs,#mycustomscroll_sl,#mycustomscroll_rl,#mycustomscroll_al
+{
+/* Typical fixed height and fixed width example */
+float:left;width:98%;sheight: 500px;sheight: 100%;z-index:0;padding-right:2px;
+/* IE overflow fix, position must be relative or absolute */
+position: relative;background-color: #FFF;padding-bottom:70px;
+}
+.outerdiv{height:348px}
+.subheading{color:#a2a2a2;font-size:13px}
+.DB_req span{padding-left:5px}
+.DB_req a:hover span{text-decoration:underline; color:#000;}
+.approve,.approve a{ color:#ff4d4d;text-decoration:none;}
+.pending,.pending a{color:#8384b5;text-decoration:none;}
+.progress,.progress a{color:#33bab1;text-decoration:none;}
+.completed,.completed a{color:#58b264;text-decoration:none;}
+.denied, .denied a{color:#c79139;text-decoration:none;}
+.cancel,.cancel a{color:#9aa7b6;text-decoration:none;}
+.DB_sub{width:100%;margin:10px 0px 0px 0px;color:#000;}
+.DB_column:hover{background:#f6f8fb;display: block;}
+.DB_req_2{font-size: 12px;margin: 10px 0 5px;width: 96%;background:url(../images/req-hovr.png) no-repeat #F6F8FB;}
+.DB_req_2 span{padding-left:25px;}
+.DB_req_2 h4{font-size:16px;float:right;font-weight:bold;margin:0 7px 0 0;color:#ff4d4d !important;}
+.DB_req_2 a{text-decoration:none;display:block;color:#ca3028;padding: 10px 10px;}
+.DB_req_2:hover{background:#e6e6e6;text-decoration:underline;color:#343434;background:url(../images/req-nrml.png) no-repeat #fddedd;}
+.DB_req_2 a:hover h4{color:#244076 !important;}
+.DB_req_2 a:hover{color:#244076 !important;}
+.DB_content_top{padding-top:10px;}
+.requestcont a{text-decoration:none;}
+.DB_contentright{float: left;margin: 10px 0 0;padding: 12px;width: 30%;}
+.DB_contentright h3 {font-size:13px;font-weight:bold;color:#5d5d5d;margin:-10px 0px 0px 0px}
+.elevenfont{font-size:12px;}
+.line{background:#e6e6e6;height:1px;width:100%;float:left;margin-top:4px;}
+.info_right1{float:left;padding-left:5%;width:32%;color:#033;height:auto;}
+.form_title{color: #444;font-size: 15px;font-weight: bold;}
+.right-modify{float:right;margin: -20px 0 0 0;}
+.dashgetstarted {margin:-9px 0 0 5px;}
+a:link.bluebutton, a:visited.bluebutton, a:active.bluebutton{color:#fff !important; /*button text color*/}
+.clear{clear:both}
+#rightcontentscroll
+{
+/* Typical fixed height and fixed width example */
+float:left;width:235px;sheight: 500px;sheight: 100%;z-index:0;margin:0 10px 0 0px;
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;padding-bottom: 70px;
+}
+.rightnavbg{background: url(../images/rightnav.png) repeat-y left;padding-right:5px;}
+.DB_rightside{padding:10px 0px}
+.selecticon{
+background: url("../images/bg_select.png") no-repeat scroll 0 0 transparent;cursor: pointer;
+font-size: 12px;height: 21px;margin: 0 0 0 -10px;padding: 6px 0 0 10px;width: 219px;
+}
+.selectholder
+{
+background: none repeat scroll 0 0 #F1F1F1;border: 1px solid #AAAAAA;
+box-shadow: 0 0 8px #888888;display: none;font-size: 12px;overflow: visible;position: absolute;
+width: 200px;z-index: 9999;
+}
+.customSelect{max-height: 240px;overflow-x: hidden;overflow-y: auto;}
+.selectitems{padding: 1px 0 1px 5px;}
+.hoverclass{background:#ccc;cursor:pointer;}
+.selectedclass{background:#ccc;}
+
+/* Dashboard Footer */
+.footerdashboard{font-size:13px;color:#b3b3b3;padding-top:0px;float:left;height: 15px;margin-top:-49px;position: relative;margin-left: -30px;}
+.footerdashboard a:hover{ color:#29abe2;}
+.footerdashboard  h4{padding:2px 8px 6px 27px;margin-top:0px;margin-left:0px;float:left;height:15px;font-size:12px;font-weight:normal;
+background:url(../images/hplogo.png) no-repeat left top;
+}
+.footerdashboard  ul li{list-style:none;float:left;padding:0 15px 0 0;}
+.footerdashboard  ul li a{font-weight:bold;margin: 0 0 0 -5px;color:#808080;text-decoration:none;}
+#dhtmltooltip{position: absolute;font-size:12px;
+background:url(../images/bg_tooltip.png) bottom left  scroll repeat-x #FEFDFE;
+border: 1px solid #ccc;padding: 2px;color:#000;visibility: hidden;z-index: 1100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+.cntrcontent2
+{
+	color: #a7a7a7;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 10px 0 20px 0;
+}
+.cntrcontent2 label
+{
+       color: #666;
+       font-size: 11px;
+       font-weight: normal;
+}
+
+/*filternav related css*/
+.cntrtopnav{font-size: 11px;color: #999999;background: #f6f6f6;border-bottom: solid 1px #ccc;margin:0 0px 0 -6px;padding: 4px 0 0 5px;height: 45px;}
+.cntrtopnavRight{font-size: 11px;color: #999999;background: #f6f6f6;border-bottom: solid 1px #ccc;margin:0 0px 0 -17px;padding: 4px 0 0 5px;height: 45px;}
+.topdropdown_top{background:url(../images/filterhovertop.png) no-repeat;width:160px;height:8px;}
+.topdropdown_middle{background:url(../images/filterhover_middle.png) repeat-y;height: auto;padding: 0 10px;width: 158px;}
+.topdropdown_middle a{color: #666666;display: block;line-height: 22px;margin: 0px 10px;padding: 0;text-decoration: none;vertical-align: middle;width: 145px;}
+div.topdropdown_middle a:hover{background:#3A83E6;color: #FFFFFF;line-height: 22px;margin: 0 10px 0 -10px;padding-left: 20px;text-decoration: none;vertical-align: middle;width: 137px;}
+.topdropdown_btm{background:url(../images/filterhover_btm.png) no-repeat;width:160px;height:8px;}
+.filerDivClass{float:left;width:60px;}
+#sorting,#filtering{position: absolute;z-index: 10;margin:5px 0 0 -5px;visibility: hidden;}
+.sortnav{float: left;padding: 7px 0 0 10px;width:500px;height:24px;}
+.sortnavbig{width:600px;}
+.sortnav a{text-decoration: none;color: #999999;padding:0 10px 0 18px;}
+.sortnav a span:hover{text-decoration: none;color: #000;}
+.sortnavSub{float: left;padding: 7px 0 0 10px;width: 515px;height:24px;}
+.sortnavSub a{text-decoration: none;color: #999999;padding:0 10px 0 18px;}
+.sortnavSub a span:hover{text-decoration: none;color: #000;}
+.filternav{float: left;padding: 0 0 0px 5px;width:145px;font-size:11px !important;margin:2px 0 0 0px;height:22px;background:url(../images/filter_bg.png) no-repeat;}
+.filternav a{color: #000000;display: block;padding: 4px 0 4px 0px;text-decoration: none;width: 137px;font-size:11px !important;}
+.filternav a:hover{
+background: url(../images/filter_bg.png) no-repeat scroll 0 -23px transparent;
+color: #000;text-decoration: none;width: 139px;margin: 0 0 0 -5px;padding: 4px 0 5px 5px;font-size:11px !important;
+}
+.secondfilter{float: left;padding: 0 0 0px 5px;width:48px;margin:2px 0 0 0px;height:22px;background:url(../images/filter_unchecked_bg.png) no-repeat;}
+.secondfilter a{color: #000000;display: block;padding: 4px 0 4px 0px;text-decoration: none;width:145px;}
+.secondfilter a:hover
+{
+background: url(../images/filter_unchecked_bg.png) no-repeat scroll 0 -23px transparent;
+color: #000;text-decoration: none;width: 145px;margin: 0 0 0 -5px;padding: 4px 0 5px 5px;
+}
+.secondfilterChecked {
+background: url("../images/filter_checked_bg.png ") no-repeat scroll 0 0 transparent;
+float: left;height: 22px;margin: 2px 0 0 0;padding: 0 0 0 5px;width: 48px;
+}
+.secondfilterChecked a {color: #000000;display: block;padding: 4px 0 4px 0;text-decoration: none;width: 145px;}
+.secondfilterChecked a:hover {
+background: url("../images/filter_checked_bg.png ") no-repeat scroll 0 -23px transparent;
+color: #000000;margin: 0 0 0 -5px;padding: 4px 0 5px 5px;text-decoration: none;width: 145px;
+}
+.checkBoxClass{float:left;margin:-20px 0 0 -11px;}
+#multiActionDivApp,#multiActionDiv,#dateSorting,#dateSortingApp{position: absolute;z-index: 10;margin:0 0 0 -5px;visibility: hidden;}
+#sorting img,#filtering img,#multiActionDiv img,#multiActionDivApp img,#dateSorting img,#dateSortingApp img{margin-left:-15px;}
+
+/*Centre Div Styles for different pages*/
+#mycustomscroll_fs,#mycustomscroll_sl,#mycustomscroll_rl,#mycustomscroll_al{float:left;width:98%;sheight: 500px;sheight: 100%;z-index:0;padding-right:2px;
+/* IE overflow fix, position must be relative or absolute */
+position: relative;	background-color: #FFF;	padding-bottom:70px;
+ }
+#mycustomscroll_so{
+	/*background-color: #FFFFFF;*/
+	float: left;
+	padding-bottom: 70px;
+	padding-right: 2px;
+	position: relative;
+	width: 100%;
+	z-index: 0;}
+#mycustomscroll_Request,#mycustomscroll_Approve,#mycustomscroll_Sub
+{
+/* Typical fixed height and fixed width example */
+float:left;
+width:100%;
+sheight: 500px;
+sheight: 100%;
+z-index:0;
+/* padding-right:2px; */
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+background-color: #FFF;
+/* padding-bottom:70px; */
+overflow-y:auto;
+overflow-x:hidden;
+/* min-height: 500px;  */
+/* margin-bottom:-10px;	 */
+}
+
+#mycustomscroll_details
+{
+/* Typical fixed height and fixed width example */
+float:left;
+width:98%;
+sheight: 500px;
+sheight: 100%;
+z-index:0;
+padding-right:2px;
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+padding-bottom: 70px;
+}
+#notifycontentscroll
+{
+/* Typical fixed height and fixed width example */
+float:left;
+width:98%;
+sheight: 500px;
+sheight: 100%;
+overflow: auto;
+z-index:0;
+padding-right:2px;
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+}
+#rightcontentscroll
+{
+/* Typical fixed height and fixed width example */
+float:left;
+width:235px;
+sheight: 500px;
+sheight: 100%;
+z-index:0;
+margin:0 10px 0 0px;
+	/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+padding-bottom: 70px;
+}
+
+#rightsubscroll
+{
+/* Typical fixed height and fixed width example */
+float:left;
+width:235px;
+sheight: 500px;
+sheight: 100%;
+overflow:auto;
+z-index:0;
+padding-right:2px;
+margin:0 0px 0 -21px;
+	/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+}
+
+#rightsoscroll
+{
+/* Typical fixed height and fixed width example */
+float:left;
+width:235px;
+sheight: 500px;
+sheight: 100%;
+z-index:0;
+margin:0 0px 0 -10px;
+	/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+height:100%;
+}
+.clearfloat 
+{
+clear:both;
+height:0px;
+line-height:0px;
+visibility: hidden;
+}
+.hr_sep_solidline
+{
+	border-top: 1px solid #cccccc;
+	height: 1px;
+	margin:10px 0 0 0;
+	height: 10px;
+	clear:both;
+}
+
+/*Classes Added for Subsrition Tabs*/
+#tabsF {margin: 0 0 30px 0;padding:0px; float:left;width:100%;font-size:14px;font-weight:bold;line-height:normal;background:url("../images/tab_bgimage.gif") repeat-x bottom;}
+#tabsF ul.tabs {margin:0;padding:0;width:auto;float:left;list-style:none;}
+#tabsF ul.tabs li {margin:0 5px 0 10px;height:38px; width:auto;float:left;display:inline;}
+#tabsF ul.tabs li a {margin:0;height:38px; padding:0; width:auto;float:left;display:block;text-decoration:none;text-align:center;}
+#tabsF ul.tabs li a span {margin-right:0px;height:38px;padding:10px 10px 0px 5px;float:left;display:block;width:auto; color:#b3b3b3;}
+#tabsF ul.tabs li.active a{margin:0;height:38px;padding:0 0 0 6px;background:url("../images/tab_leftimg.gif") no-repeat left top;width:auto;float:left;display:block;text-decoration:none;text-align:center;}
+#tabsF ul.tabs li.active a span {margin-right:0px;height:38px;padding:10px 25px 0px 15px;float:left;display:block;width:auto;background:url("../images/tab_roghtimg.gif") no-repeat right top;color:#444444; }
+#tabsF ul.tabs li.active a:hover span {color:#444444; cursor:pointer;}
+/*Classes Added for Subsrition Tabs Ended*/
+
+.instanceStatusText{clear: both;color: #858585;font-size: 12px;font-weight: normal;margin: -9px 0 0 35px;}
+.instanceStatusVal{color: #444444;float: left;font-size: 12px;font-weight: bold;margin: 0 0 0 0;white-space: nowrap;}
+
+
+/* Classes Added for Subscription History Tab Starts Here*/
+
+#parentoptiontabs{float:left; width:100%;}
+#tabletitle{float:left; width:95%;font-size:12px; color:#b3b3b3; margin:20px 0 20px 0; }
+#tabletitle .colleft{float:left; margin:0 10px 0 10px; width:45%;}
+#tabletitle .colmid{float:left; margin:0 10px 0 6px; width:25%;}
+#tabletitle .colright{float:left; margin:0 10px 0 -7px; width:15%;}
+.fulltabletitle{float:left; width:95%;border-bottom:1px solid #cccccc; padding-bottom:5px; margin-bottom:10px;}
+.statuscolumn{float:left; width:98%; padding-bottom:5px; margin-bottom:5px}
+.statuscolumn .scolleft{float:left; margin:0 10px 0 10px; width:45%;font-weight:bold; font-size:13px; color:#0071bc; }
+.statuscolumn .scolmid{float:left; margin:0 10px 0 11px; width:25%;font-size:12px; color:#666;}
+.statuscolumn .scolright{float:left;width:15%;font-weight:bold; font-size:13px; color:#ff0000;}
+.statuscolumn .scolrightgreen{float:left;width:15%;font-weight:bold; font-size:13px; color:#39b54a;}
+.statuscolumn2{float:left; width:98%;border-top:1px dashed #ececec; padding-top:5px;  }
+.statuscolumn2 .scolleft2{float:left; margin:0 10px 0 20px; width:45%;font-size:12px; color:#333;}
+.statuscolumn2 .scolleft2 span{font-weight:bold; font-size:12px; color:#999; }
+.statuscolumn2 .scolmid2{float:left; margin:0 10px 0 0px; width:25%; font-size:12px; color:#666;}
+.statuscolumn2 .scolright2{float:left; width:25%;font-weight:bold; font-size:12px; color:#ff7f7f;}
+/* Classes Added for Subscription History Tab Ends Here */
+
+.parentoptionleftDenied{float: left;padding-bottom: 10px;width: 150px;}
+.serviceDesignName{width:80%; float:left; margin:-20px 0 10px 0;}
+
+/*Catalog, Request List & Subscription List Pages*/
+.statustab {float:left; min-width:17%; margin:0 38px 10px 0;} 
+.statustab p{ margin:-5px 0px 0 25px;white-space: nowrap;}
+.statustab .title{font-size:13px; font-weight:bold; color:#444; margin-left:15px;}
+.statustab .des{font-size:12px; color:#858585;margin-left:15px;white-space: nowrap;} 
+.statustab img{float:left;}
+.item h2{text-align:left;font-size:13px;margin-top:92px;padding:0 2px 0 5px;min-height: 35px;}
+.item img{border:none;margin-bottom: 8px;padding-left: 0px;}
+.item p{text-align:left;font-size:12px;color:#686868;padding:0 2px 0 5px;}
+.item p span,.right_subheading{font-size:11px;color:#bbbbbb;}
+a.css_tooltip_catlog {text-decoration:none;float: right;}
+a.css_tooltip_catlog span{display:none;margin:-51px 0 0 -40px}
+a.css_tooltip_catlog:hover{}
+a.css_tooltip_catlog:hover span{color: #333333;display: block;font-size: 11px;font-weight: normal;height: 42px;padding: 5px 0 0 25px;position: absolute;text-align: left;width: 118px;background:url(../images/tooltipbg.png) no-repeat;}
+.itemuserimg{float:right;padding-right:22px;margin-top: -8px;padding-right: 10px;}
+.clearfloat {clear:both;height:0px;line-height:0px;visibility: hidden;}
+.mainlist {float:left; width:100%;margin-bottom:0px;margin-left:8px;border-bottom:1px solid #ccc;}
+.listimage{float:left; width:90px; margin-top:14px;}
+.listcheckbox{float:left;margin-left: 5px;margin-top:35px;width:25px;}
+.listcont {float:left; width:71%;}
+.listconttitle{float:left; width:100%;}
+.listconttitleleft{float:left;margin-right: 10px;width: 100%;position:relative;}
+.listconttitleleft p{color: #858585;float:left;font-size:12px;width: 70%;}
+.listconttitleleft p span{float:left; font-size:13px; font-weight:bold; color:#444;}
+.listconttitleTooltip{font-weight:normal !important; font-size:12px !important; color:#858585 !important;}
+.listcontImgIcon{float:left; padding: 10px 15px 0 0;}
+.listcontImgIcon img{width:75px;height:75px;}
+.mainlist:hover {background-color:#F7F8FC;pointer:cursor;}
+.listcontcataloge{float:left; width:75%;margin-top: 4px;}
+.listconttitlecataloge{float:left; width:40%;margin-top: 20px}
+.listconttitlecataloge p{float:left; font-size:12px; color:#858585;}
+.listconttitlecataloge p span{float:left; font-size:13px; font-weight:bold; color:#444;}
+.listcontitemcataloge{ float:left; margin:0 0 0 -35px; width:45%; }
+.listcontitemcataloge ul li{display:inline;font-size: 12px;}
+.listcontitem {font-size: 12px;margin-left: -40px;margin-top: 20px;}
+.listcontitem ul li{display:inline;}
+.approstatus {float:left; width:9%;padding-right:15px;} 
+.actionlist {float:right;margin: 1px 33px 0 0;width: 182px;}
+.forprice{float:left; }
+.forprice p{float:left; font-size:12px; color:#858585; white-space:nowrap; width:100%;}
+.forprice p span{float:left; font-size:13px; font-weight:bold; color:#444; white-space:nowrap;}
+.forbutton{ float: left;margin-top: 3px;}
+.forbuttoncat{float:right;margin: 20px 30px 0 0;}
+.breaker{clear:both;border-bottom:1px solid #ccc; height:10px;}
+.forprice2 p{float:left; font-size:12px; color:#858585; white-space:nowrap; width:20%; margin-top:-6px;}
+.forprice2 p span{float:left; font-size:13px; font-weight:bold; color:#444; white-space:nowrap;}
+.statustabsub {float: left;margin: 0 0px 10px 0;min-width: 28%;width:28%;}
+.statustabsub p{margin:0px;float:left}
+.statustabsub .title{font-size:13px; font-weight:bold; color:#444; margin-left:15px;}
+.statustabsub .des{font-size:12px; color:#858585;float:left;clear:both;margin-left:15px;} 
+.statustabsub img{float:left;}
+.statuslisttab {float:left; min-width:153px; margin:0 10px 10px 0; width:28%;} 
+.statuslisttab p{ margin:0;float:left}
+.statuslisttab .title{font-size:13px; font-weight:bold; color:#444;width:90%}
+.statuslisttab .des{font-size:12px; color:#858585;clear:both;} 
+.statuslisttab img{float:left; margin-right: 10px;  margin-top: -3px;}
+.statuspricetab {float:left; min-width:120px; margin:0 10px 10px -30px; width:26%;}
+.statuspricetab p{margin:0;float:left;}
+.statuspricetab .title{font-size:13px; font-weight:bold; color:#444;}
+.statuspricetab .des{font-size:12px; color:#858585;clear:both;} 
+.statuspricetab img{float:left; margin-right: 10px;  margin-top: -3px;} 
+.forbuttonMgn{margin-top:-3px;}
+.listButtons{ border: 0 solid #333333; float: right; margin: 5px 20px 0 0;}
+.eachButton{float:left; padding:0 0px;}
+.forbuttoncat{float:right;margin: 20px 30px 0 0;}
+/* List pages CSS Styles ended */
+
+/*Catalog Detail Page Style Starts */
+.nodata-error{color: red;float: left;margin: 5px 0 0 30px;width: 120px;}
+.page_title{font-size: 12px;width: 100%;margin:-1px 0 0 0;padding: 5px 0 0 0;position: relative;word-spacing: -2px;color:#b3b3b3;}
+a.submenu:hover{text-decoration: underline;}
+.whitetxt{color: #29ABE2;text-decoration: none;word-spacing: 1px;}
+#parentoption{float:left; background-image:url(../images/parent_divider.gif); background-repeat:repeat-x; background-position:bottom; width:100%;}
+.parentoptionleft{float:left; min-height:180px; width:150px; padding-bottom:10px;}
+.parentoptionleft .approve{font-size:11px; color:#999; padding:10px 0 0 0;}
+.parentoptionleft .approve img{ padding: 18px 0 0 0;}
+.parentoptionleft .approve p{margin: 3px 0 0 0;}
+.parentoptionright{padding:0 10px 20px 160px;}
+.parentoptionright h1{font-size:18px; color:#444444;}
+.parentoptionright p{font-size:13px; color:#666;}
+.parentoptionright span p{font-size:12px; color:#999;}
+.parentoptionright p{font-size:12px; color:#666666;}
+/*Option Levels Style Starts here*/
+.parentoptionright .maincontentdivider{background-image:url(../images/main_content_divider.gif); background-position:center; background-repeat:no-repeat; height:2px; float:left; width:100%; margin:10px 0 10px 0;}
+#childoptionlevel1{ float:left; width:100%; border-bottom:1px solid #e6e6e6; padding:15px 0 15px 0; margin-bottom:0 0 10px 10px;}
+.childoptionlevel1left{ float:left; width:120px; padding:0 0 0px 0;}
+.childoptionlevel1left p{font-size:14px; color:#333; line-height:17px; margin-top:0;}
+.childoptionlevel1left .proddis {font-size:12px; color:#999; line-height: 14px; margin-top: -8px;}
+.childoptionlevel1right{ padding:0 10px 0px 160px;}
+.childoptionlevel1right .row{ float:left; padding:0 0px 0px 20px; width:95%; border:0px solid #3333CC;min-width: 500px;}
+.childoptionlevel1right .row p{font-size:12px; margin:2px 0px 10px 27px; line-height:15px;}
+.childoptionlevel1right .row img{ float:right; padding:3px 10px 3px 10px;}
+.childoptionlevel1right .lable{ float:left;font-size:12px; color:#666; width:180px; white-space:normal;}
+.childoptionlevel1right .optioncont{font-size:12px; float:left; color:#333; padding-bottom:10px;}
+.childoptionlevel1right .optioncont input{font-size:12px; color:#333;}
+.childoptionlevel1right .optioncont textarea{font-size:12px; color:#333;}
+.childoptionlevel1right .rdio{font-size:12px; float:left; color:#333; padding-bottom:10px;}
+.childoptionlevel1right .rdiotxt2{font-size:12px; float:left; color:#333; padding-bottom:10px;}
+.childoptionlevel1right .rdio input{font-size:12px; color:#333;}
+.childoptionlevel1right .rdiotxt2 input{font-size:12px; color:#333;}
+.childoptionlevel1right .dynamicRowPadLeft{padding-left:0}
+.childoptionlevel1right .toggleSwitch{float:left;vertical-align:middle;padding-bottom:6px;position:relative;}
+#childoptionlevel2{ float:left; width:100%; margin:0 0 0 -55px;}
+.childoptionlevel2right{  padding:0 0 10px 80px; width:100%;}
+.childoptionlevel2left{ float:left;}
+.childoptionlevel2right p{font-size:14px; color:#333; width: 95%;}
+.childoptionlevel2right p span {font-size:12px; color:#999; }
+
+/*Option Property Style Starts here*/
+.messagebox{float:left; margin-left:25px;width:97%;}
+.messagebox .outerdivmsg{float:left; background-image:url(../images/descp_rt.png); background-repeat:no-repeat; background-position:right top; padding:15px 5px 0px 0 ; margin:-8px 0 10px 0;}
+.messagebox .innerdiv{float:left;  background-image:url(../images/descp_lb.png); background-repeat:no-repeat; background-position:left bottom; height: auto; font-size:12px; color:#666; padding:10px;}
+.messagebox .innerdiv .topimage{float:left; background-image:url(../images/descp_arrow.png); background-repeat:no-repeat; background-position:left top;  padding:0px 0px 0px 0 ; margin:-25px 0 0 -9px; width:86px; height:19px;}
+.messagebox .bottom{float:right; background-image:url(../images/desc_image_rb.png); background-repeat:no-repeat; background-position:right bottom; width:9px; height:8px; margin:-8px -5px 0px 0; }
+.messageboxgrey{float:left; margin-left:25px;width:98%;}
+.messageboxgrey .greyouterdiv{float:left; background-image:url(../images/grey_msgbox.png); background-repeat:no-repeat; background-position:right top;  padding:5px 5px 0px 0 ; margin:0 0 10px 0;}
+.messageboxgrey .greyinnerdiv{float:left; background-image:url(../images/grey_msgbox.png); background-repeat:no-repeat; background-position:left bottom; height: auto; font-size:12px; color:#666; padding:10px 10px 10px 60px;}
+.messageboxwhite{float:left; margin-left:25px;width:98%;}
+.messageboxwhite .whiteouterdiv{float:left; background-image:url(../images/descp_rt.png); background-repeat:no-repeat; background-position:right top;  padding:15px 5px 0px 0 ; margin:-10px 0 10px 0;}
+.messageboxwhite .whiteinnerdiv{float:left; background-image:url(../images/descp_lb.png); background-repeat:no-repeat; background-position:left bottom; height: auto; font-size:12px; color:#666; padding:10px 10px 10px 70px;}
+.messageboxwhite .whiteinnerdiv .whitetopimage{float:left; background-image:url(../images/whitebox_lt_curve.png); background-repeat:no-repeat; background-position:left top; padding:0px 0px 0px 0 ; margin:-25px 0 0 -70px; width:31px; height:19px;}
+.messageboxwhite .whitebottom{float:right; background-image:url(../images/desc_image_rb.png); background-repeat:no-repeat; background-position:right bottom; width:9px; height:8px; margin:-8px -5px 0px 0; }
+.redasterix{color:#FF0000;}
+.validationsymbol{float: left;font-size: 11px;margin:-4px -35px 0 0;}
+.calenderClass{float: left;}
+.opttitletxt{color:#333; font-weight:bold;}
+.opttitlehightxt{color:#29abe2; font-weight:bold;}
+.descptxt{color:#666;}
+.pricetxt{color:#a67c52;}
+.propertiestxt{color:#999;}
+.status{ float:left; margin:0 0 0 -35px; width:100%; padding:0;}
+.status ul li{display:inline;}
+.parentoptionleftDenied{float: left;padding-bottom: 10px;width: 150px;}
+.cntrcontentdeniedtitle{color: #666666;font-size: 12px;font-weight: bold;padding: 5px 0 0 0;}
+.childoptionlevel1right .rowview{ float:left; padding:0 0px 0px 20px; width:95%;min-width: 300px;}
+.childoptionlevel1right .rowview p{font-size:12px; margin:2px 0px 10px 8px; line-height:15px;}
+.childoptionlevel1right .lableview{ float:left;font-size:12px; color:#666; width:180px; margin:0 10px 10px 0;}
+/* optioncontview Added */
+.childoptionlevel1right .optioncontview{font-size:12px;color:#333; padding-bottom:10px; width: 25%;float: left;}
+.childoptionlevel1right .optioncontview input{font-size:12px; color:#333;}
+.childoptionlevel1right .optioncontview textarea{font-size:12px; color:#333;}
+.childoptionlevel1right .optioncontview br{margin-bottom:6px;}
+
+
+/* Styles added for Smart Spinner Plug-in */
+
+.smartspinner
+{
+	padding: 0;
+	padding: 2px 10px 2px 2px;
+	border:solid 1px #afafaf;
+	background: url(../images/normal.png) no-repeat right;
+	background-color:#f6f6f6;
+	text-align:left;
+	/*vertical-align:middle;*/
+	line-height:1;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	color:#848484;
+	font-size:1.0em;
+	/* font-weight:bold; */
+}
+.smartspinner.up
+{
+	background: url(../images/up1.png) no-repeat right;
+	background-color:#f6f6f6;
+	cursor:pointer;
+}
+.smartspinner.down
+{
+	background: url(../images/down1.png) no-repeat right;
+	background-color:#f6f6f6;
+	cursor:pointer;
+}
+
+/* Smart Spinner Plug-in Styles End */
+
+/*Styles for confirm pop up in service detail */
+/* #confirmPopupService{width:800px;margin:auto;padding:0;} */
+#confirmPopupService{margin: -20px 0 0 -50px;padding: 0;width: 800px;height:378px;}
+#confirmPopupService h1{border-bottom:1px solid #ccc;padding-left:40px;padding-bottom:10px;}
+#confirmPopupService h1 span{font-size:20px; color:#444444;}
+#confirmPopupService h1 img{border:0;padding-right:10px;padding-bottom:8px;}
+.confirmList{margin:0;paddding:0;border-bottom:1px solid #ccc;height:30px;}
+.confirmList li{float:left;list-style-type:none;color:#4D4D4D;margin:0 20px 0 0;font-weight:bold;font-size:14px;padding-bottom:10px;}
+.confirmList a{text-decoration:none;color:#4D4D4D;}
+.confirmList a:hover{text-decoration:none;color:#29ABE2;}
+.confirmList a.active{color:#1A8DBE;}
+#confirmContent1,#confirmContent2{height:160px;sheight: 100%;overflow:auto;margin-top:4px;margin-bottom:6px;width:100%;overflow-x:hidden }
+.noSpecification{font-size:12px;font-weight:bold;color:#666;margin-top:50px;}
+.delInfoRow{padding-bottom:20px;overflow:auto;}
+.delInfoRow li{float:left;list-style-type:none;width:400px;}
+.delInfoRow li img{float:left;padding-top:2px;padding-right:6px;}
+.delInfoRow li label{font-weight:normal;font-size:12px;color:#666;float:left;width:250px;}
+.delInfoRow li span{font-weight:bold;font-size:13px;color:#444;width:250px;float:left;padding-top:2px;}
+.delInfoRow li.wdp300px{width:300px;}
+.delInfoRow li span.wdp400px{width:400px;float:left;}
+.delInfoFiles{padding-left:40px;padding-bottom:10px;clear:both}
+.delInfoFiles h2{font-weight:bold;font-size:14px;color:#333;clear:both;margin-bottom:0;}
+.delInfoFiles a{color:blue;padding-right:15px;font-weight:normal;font-size:12px;}
+.delInfoFiles a img{padding-right:4px;border:0;}
+.confirmPrice{width:100%;border-top:1px solid #ccc;margin:0;}
+.confirmPrice li{float: left;list-style-type: none;width: 25%;}
+.confirmPrice li label{font-weight:normal;font-size:12px;color:#666;float:left;width:80%;}
+.confirmPrice li span{font-weight:bold;font-size:13px;color:#444;width:180%;float:left;padding-top:2px;}
+.popupButtons{clear:both;float:right;padding-right:10px;}
+.popupButtons span{color:#fff}
+.specification{padding-bottom:20px;overflow:auto;}
+.specification li{float:left;list-style-type:none;width:225px;margin-right:20px;}
+.specification li img{float:left;padding-top:2px;padding-right:6px;}
+.specification li label{font-weight:normal;font-size:12px;color:#666;float:left;width:200px;}
+.specification li span{font-weight:bold;font-size:13px;color:#444;width:200px;float:left;padding-top:2px;}
+#confirmPopupService{margin: -20px 0 0 -70px;padding: 0;width: 800px;height:360px;}
+.modalpopup .confirmTop{background: url(../images/confirmPopup_top.png) no-repeat;height: 14px;width: 823px;}
+.modalpopup .confirmCntr{width: 800px;padding:10px 10px 0 13px;margin:0 0 0 0;background-color:#fff;}
+.modalpopup .confirmCntr .modaltxt-Popup{border-bottom:0px;}
+.modalpopup .confirmBtm{background: url(../images/confirmPopup_btm.png) no-repeat;height: 14px;width: 823px;}
+.confirmCloseImg {height: 24px;margin: 20px 0 0 780px;position: absolute;}
+/* End code for service detail confirmation pop up */
+
+/*For Security Banner Styles Start*/
+.securityGreenBg{background-color:#00CC00;padding:4px;text-align:center;color:#fff;font-weight:bold;}
+.securityBlueBg{background-color:#33FFFF;padding:4px;text-align:center;color:#fff;font-weight:bold;}
+.securityRedBg{background-color:#FF0000;padding:4px;text-align:center;color:#fff;font-weight:bold;}
+.securityOrangeBg{background-color:#FF9900;padding:4px;text-align:center;color:#fff;font-weight:bold;}
+/*For Security Banner Styles End*/
+
+/*List page action button changes*/
+.deleteActionRequest{width:86px;text-align:center}
+.cancelActionRequest{width:86px;text-align:center}
+.deleteRequestBtn{width:82px;text-align:center;margin-left:-1px;}
+.viewRequestBtn{width:86px;text-align:center;margin-left:-5px;}
+/* .actionListMgn{width:200px;margin-top:0px;} */
+.actionListMgn{margin-left: -24px;width: 182px;}
+.redbuttonRequestWidth{width:82px;margin-right:4px;}
+/*List page action button changes*/
+
+/*New CSS added for Group Ownership Item */
+#groupOwnership{display:none;}
+.toggle{background:url("../images/toggle.png") bottom left;display:block;width:160px;height:22px;}
+.toggle.checked{background-position:top left;}
+.childoptionlevel1right .toggleSwitch{float:left;vertical-align:middle;padding-bottom:6px;position:relative;}
+.childoptionlevel1right #groupOwnershipList{font-size:12px;height:20px;}
+.toggleSwitch a.jqTransformCheckbox{display:none;}
+.groupOn{color:#fff;font-size:11px;font-weight:bold;z-index:1000;position:absolute;left:7px;top:4px;text-decoration:none}
+.groupOff{color:#666;font-size:11px;font-weight:bold;z-index:1000;position:absolute;left:83px;top:4px;text-decoration:none}
+.fileicon{padding: 0 0 0 5px;margin:0 0 0 -42px !important;}
+.fileicon ul li {list-style-type:none;margin:0 !important;padding:0 !important;}
+.fileicon li {float:none;}
+.fileicon li a{background:url(../images/attach_icon.png) no-repeat;display: block;font-size: 12px;line-height: 1.5;padding-bottom: 5px !important;width: 200px;}
+.nodatasubs {color:#5D5D5D;font-size:13px;padding-top:5px;padding-right:5px;padding-left:17px;padding-bottom:5px;margin-top:3px;font-weight:normal;font-style: italic;line-height: 1;}
+.blueboxinnertitle{color: #b4b4b4;font-size: 12px;font-weight: normal;margin:5px 0 0 0;width: 190px;}
+/* Group Ownership CSS Ends Here */
+
+.overlayGroupIcon{position:absolute;left:55px;top:12px}
+.overlayGroupIconDetail{position:absolute;left:75px;top:20px}
+
+/*Measurable Property Style Starts here*/
+.manageServiceIcon{position:absolute;left:70px;top: 8px;}
+.positionRelative{position:relative}
+.resourceTypeOuterContainer {color: #666666;float: left;font-size: 11px;margin-left: -3px;margin-top: -2px;overflow: auto;padding: 0 10px 0 150px;width: 76%;margin-top:-15px;}
+.resourceTypeOuterContainer h3{color:#000;padding-bottom:6px;font-size:100%;margin-left:-35px;width:100%;text-decoration:none;background-color:#F6F6F6;padding:10px;}
+.resourceTypeOuterContainer h3 a{color:#000;text-decoration:none;font-size:110%;}
+.resourceTypeOuterContainer h3 img{padding-right:12px;}
+.resourceTypeInnerContainer{width:100%;float:left;padding-bottom:20px;}
+.rowResourceType{width:100%;float:left;margin-left:-25px;border-bottom:1px solid #EDEDED;}
+.rowResourceContainer{width:100%;float:left;}
+.rowResourceImage{float:left;margin-left:-10px;}
+.rowResourceName{float: left;padding-bottom: 6px;width: 70%;padding-left: 6px;}
+.rowResourceName p{color: #666666;float: left;font-size: 11px;font-weight:normal;margin-bottom: 2px;padding: 4px 0 0;width: 100%;}
+.rowResourceName span{font-size:12px;font-weight:bold;color:#334D7F;float:left;clear:both;padding-top:0;}
+.boxWidth{width:88%}
+.resourceWrapper{width:46%;float:left;padding-left:10px;}
+.instanceRightWidth45Per {width: 45%;}
+.instanceleftValues45Per {width: 45%;}
+.resourceTypeContainerMgn{margin-left:-20px;}
+.instance_left_Values{width: 60%;float: left;}
+/*Measurable Property Style Ends here*/
+.customSelect{overflow-x: hidden;overflow-y: auto;max-height:240px}
+
+/*defaultfooter Part CSS starts here*/
+.defaultFooter{
+font-size:13px;color:#b3b3b3;padding-top:0px;float:left;height: 34px;padding-left: 200px;
+margin-top:-37px;position: relative;
+}
+.defaultFooter ul li{list-style:none;float:left;padding:0 15px 0 0;}
+.defaultFooter ul li a{font-weight:bold;margin: 0 0 0 -5px;color:#808080;text-decoration:none;}
+.defaultFooter a:hover{ color:#29abe2;}
+.defaultFooter h4{
+padding:2px 8px 6px 27px;margin-top:0px;margin-left:0px;float:left;height:15px;font-size:12px;font-weight:normal;
+background:url(../images/hplogo.png) no-repeat left top;
+}
+
+/*Detail Page Footer*/
+
+.footerDetail  h4{padding:2px 8px 6px 27px;margin-top:0px;margin-left:0px;float:left;height:15px;font-size:12px;font-weight:normal;background:url(../images/hplogo.png) no-repeat left top;}
+.footerDetail  ul li{list-style:none;float:left;padding:0 15px 0 0;position:relative;}
+.footerDetail  ul li a{font-weight:bold;margin: 0 0 0 -5px;color:#808080;text-decoration:none;}
+.footerDetail a:hover{ color:#29abe2;}
+ 

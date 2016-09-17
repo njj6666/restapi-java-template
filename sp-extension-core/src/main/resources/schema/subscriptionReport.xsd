@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.hp.com/es/cto/sp/context/jaxb/subscription" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.hp.com/es/cto/sp/context/jaxb/subscription">
+    <complexType name="subscription_record_server">
+    	<attribute name="ipAddress" type="string"></attribute>
+    	<attribute name="public_ipAddress" type="string"></attribute>
+    	<attribute name="private_ipaddress" type="string"></attribute>
+    	<attribute name="size" type="string"></attribute>
+    	<attribute name="csa_provider" type="string"></attribute>
+    	<attribute name="iaas_provider" type="string"></attribute>
+    	<attribute name="dns" type="string"></attribute>
+    	<attribute name="simplified_dns" type="string"></attribute>
+    	<attribute name="os_type" type="string"></attribute>
+    	<attribute name="active_flag" type="string"></attribute>
+    	<attribute name="products" type="string"></attribute>
+    </complexType>
+
+    <complexType name="subscription_record">
+    	<sequence>
+    		<element name="subscription_record_server" type="tns:subscription_record_server" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="status" type="string"></attribute>
+    	<attribute name="owner_email" type="string"></attribute>
+    	<attribute name="csa_org" type="string"></attribute>
+    	<attribute name="context_node" type="string"></attribute>
+    	<attribute name="project" type="string"></attribute>
+    	<attribute name="start_time" type="string"></attribute>
+    	<attribute name="terminate_time" type="string"></attribute>
+    	<attribute name="property" type="string"></attribute>
+    </complexType>
+
+    <element name="subscription_report" type="tns:subscription_report"></element>
+
+    <complexType name="subscription_report">
+    	<sequence>
+    		<element name="subscription_record" type="tns:subscription_record" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+</schema>

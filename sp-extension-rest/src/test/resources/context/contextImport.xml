@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context_import xmlns="http://www.hp.com/es/cto/sp/context/jaxb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hp.com/es/cto/sp/context/jaxb importContext.xsd ">
+	<context_metadata_import name="organization" level="0">
+	</context_metadata_import>
+	<context_metadata_import  name="Entity" level="1">
+	</context_metadata_import>
+	<context_metadata_import name="Department" level="2">
+	</context_metadata_import>
+	<context_metadata_import name="BelluciService" level="3">
+	</context_metadata_import>
+	<context_metadata_import name="TypeEnv" level="4">
+	</context_metadata_import>
+	<context_node_import name="Belluci" display_name="Belluci" context_metadata="organization">
+		<child_node_import name="VO Entity" display_name="VO Entity" context_metadata="Entity">
+			<child_node_import name="AWV" display_name="AWV" context_metadata="Department">
+				<child_node_import name="IaaS" display_name="IaaS" context_metadata="BelluciService">
+				</child_node_import>
+				<child_node_import name="PaaS" display_name="PaaS" context_metadata="BelluciService">
+				</child_node_import>
+				<child_node_import name="AMaaS" display_name="AMaaS" context_metadata="BelluciService">
+					<child_node_import name="Dev-Test-Int" display_name="Dev-Test-Int" context_metadata="TypeEnv">
+					</child_node_import>
+					<child_node_import name="prod" display_name="prod" context_metadata="TypeEnv">
+					</child_node_import>
+					<child_node_import name="prod-transition" display_name="prod-transition" context_metadata="TypeEnv">
+					</child_node_import>
+				</child_node_import>
+			</child_node_import>
+			<child_node_import name="OV" display_name="OV" context_metadata="Department">
+			</child_node_import>
+		</child_node_import>
+		<child_node_import name="None VO Entity" display_name="None VO Entity" context_metadata="Entity">
+		</child_node_import>
+	</context_node_import>
+</context_import>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscription_report xmlns="http://www.hp.com/es/cto/sp/context/jaxb/subscription"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.hp.com/es/cto/sp/context/jaxb/subscription subscriptionReport.xml ">
+	<subscription_record name="sub1" status="ACTIVE" owner_email="sp@hp.com"
+		csa_org_="BFA0DB53DA404B90E04059106D1A24B5" context_node_="NULL"
+		project="Test" start_time="2014-10-09 00:03:15.0230000"
+		terminate_time="2014-10-19 00:03:15.0230000" subscription_property="environment:dev;build_no:3.13.1.1">
+		<subscription_record_server ipAddress="192.168.1.1"
+			public_ipAddress="192.168.1.1" private_ipaddress="192.168.1.1" size="small"
+			csa_prover_="BFA0DB53DA404B90E04059106D1A24B5" iaas_prover="hpcs"
+			dns="tomcat-int.serviceplatform.ensv.hp.com" simplified_dns="true" os_type="windows" active_flag="true" product="tomcat;java;ngnix">
+		</subscription_record_server>
+		<subscription_record_server ipAddress="192.168.1.2"
+			public_ipAddress="192.168.1.2" private_ipaddress="192.168.1.2" size="medium"
+			csa_prover_="BFA0DB53DA404B90E04059106D1A24B5" iaas_prover="ecs"
+			dns="postgres-int.serviceplatform.ensv.hp.com" simplified_dns="false" os_type="linux" active_flag="false" product="postgres;ngnix">
+		</subscription_record_server>
+	</subscription_record>
+	<subscription_record name="sub2" status="CANCELLED" owner_email="sp.china@hp.com"
+		csa_org_="BFA0DB53DA404B90E04059106D1A24B5" context_node_="BFA0DB53DA404B90E04059106D1A24B5"
+		project="Test1" start_time="2014-10-01 00:03:15.0230000"
+		terminate_time="2014-10-11 00:03:15.0230000" subscription_property="environment:dev;build_no:3.13.1.1;backup=true">
+		<subscription_record_server ipAddress="192.168.2.1"
+			public_ipAddress="192.168.2.1" private_ipaddress="192.168.2.1" size="small"
+			csa_prover_="BFA0DB53DA404B90E04059106D1A24B5" iaas_prover="hpcs"
+			dns="tomcat-int.serviceplatform.ensv.hp.com" simplified_dns="true" os_type="windows" active_flag="true" product="tomcat;java;ngnix">
+		</subscription_record_server>
+	</subscription_record>
+</subscription_report>
+

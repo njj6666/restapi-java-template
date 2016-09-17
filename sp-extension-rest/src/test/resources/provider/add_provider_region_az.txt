@@ -1,0 +1,6 @@
+{
+    "provider_region_az": {
+        "provider_region_id": "test_provider_region_id",
+        "az": "az1"
+    }
+}

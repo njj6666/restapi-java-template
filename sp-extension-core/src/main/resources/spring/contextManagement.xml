@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+						http://www.springframework.org/schema/aop 
+						http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<!-- DAO object configuration -->
+	<bean id="contextMetaDataDao" class="com.hp.es.cto.sp.persistence.dao.context.ContextMetaDataDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="contextNodeDaoMssql"
+		class="com.hp.es.cto.sp.persistence.dao.context.ContextNodeDaoMssqlImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="contextNodeDaoPostgre"
+		class="com.hp.es.cto.sp.persistence.dao.context.ContextNodeDaoPostgreImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="contextNodeLdapMappingDao"
+		class="com.hp.es.cto.sp.persistence.dao.context.ContextNodeLdapMappingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="contextNodeProviderMappingDao"
+		class="com.hp.es.cto.sp.persistence.dao.context.ContextNodeProviderMappingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- Service bean configuration -->
+	<bean id="contextMetaDataService" class="com.hp.es.cto.sp.service.context.ContextMetaDataServiceImpl">
+		<property name="genericDao" ref="contextMetaDataDao"></property>
+		<property name="contextMetaDataDao" ref="contextMetaDataDao"></property>
+	</bean>
+	<bean id="contextNodeService" class="com.hp.es.cto.sp.service.context.ContextNodeServiceImpl">
+	</bean>
+	<bean id="contextNodeLdapMappingService" class="com.hp.es.cto.sp.service.context.ContextNodeLdapMappingServiceImpl">
+		<property name="genericDao" ref="contextNodeLdapMappingDao"></property>
+		<property name="contextNodeLdapMappingDao" ref="contextNodeLdapMappingDao"></property>
+	</bean>
+	<bean id="contextNodeProviderMappingService" class="com.hp.es.cto.sp.service.context.ContextNodeProviderMappingServiceImpl">
+		<property name="genericDao" ref="contextNodeProviderMappingDao"></property>
+		<property name="contextNodeProviderMappingDao" ref="contextNodeProviderMappingDao"></property>
+	</bean>
+	<bean id="providerServerService" class="com.hp.es.cto.sp.service.context.ProviderServerServiceImpl">
+		<property name="genericDao" ref="providerServerDao"></property>
+		<property name="providerServerDao" ref="providerServerDao"></property>
+	</bean>
+	<bean id="providerSharedResourceService" class="com.hp.es.cto.sp.service.context.ProviderSharedResourceServiceImpl">
+		<property name="genericDao" ref="providerSharedResourceDao"></property>
+		<property name="providerSharedResourceDao" ref="providerSharedResourceDao"></property>
+	</bean>
+</beans>

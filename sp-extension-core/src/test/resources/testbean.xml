@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+						http://www.springframework.org/schema/aop 
+						http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<bean id="contextApplicationContextProvider" class="com.hp.es.cto.sp.spring.ApplicationContextProvider">
+	</bean>
+	
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>database.properties</value>
+		</property>
+	</bean>
+
+	<!-- SQL Server datasource configuration -->
+	<bean id="spextDS"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+
+	<!-- Transaction manager and annotation configuration -->
+	<tx:annotation-driven transaction-manager="txManager" />
+	<bean id="txManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="spextDS" />
+	</bean>
+
+	<!-- Hibernate session factory configuration -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="spextDS" />
+		<property name="configLocation">
+			<value>classpath:hibernate.cfg.xml</value>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<!-- JDBC connection pool (use the built-in) -->
+				<prop key="hibernate.connection.pool_size">1</prop>
+				<!-- Enable Hibernate's automatic session context management -->
+				<prop key="hibernate.current_session_context_class">thread</prop>
+				<!-- Disable the second-level cache -->
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>
+
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- Import Key Management DAO and Service configuration -->
+	<import resource="classpath:spring/keyManagement.xml" />
+
+	<!-- Import Group Management DAO and Service configuration -->
+	<import resource="classpath:spring/groupManagement.xml" />
+
+	<!-- Import Context Management DAO and Service configuration -->
+	<import resource="classpath:spring/contextManagement.xml" />
+
+	<!-- Import Subscription Management DAO and Service configuration -->
+	<import resource="classpath:spring/subscriptionManagement.xml" />
+
+	<!-- Import Provider Management DAO and Service configuration -->
+	<import resource="classpath:spring/providerManagement.xml" />
+</beans>

@@ -1,0 +1,6 @@
+{
+    "provider_size": {
+        "provider_type_id": "test_provider_id",
+        "size": "small"
+    }
+}
